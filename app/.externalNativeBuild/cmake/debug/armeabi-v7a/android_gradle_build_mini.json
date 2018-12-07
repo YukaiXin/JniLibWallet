@@ -1,0 +1,16 @@
+{
+  "buildFiles": [
+    "/Users/apple/AndroidStudioProjects/jniLibWallet/app/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/apple/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/apple/AndroidStudioProjects/jniLibWallet/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target clean"
+  ],
+  "libraries": {
+    "fastmode-Debug-armeabi-v7a": {
+      "artifactName": "fastmode",
+      "buildCommand": "/Users/apple/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/apple/AndroidStudioProjects/jniLibWallet/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target fastmode",
+      "abi": "armeabi-v7a",
+      "output": "/Users/apple/AndroidStudioProjects/jniLibWallet/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libfastmode.so"
+    }
+  }
+}

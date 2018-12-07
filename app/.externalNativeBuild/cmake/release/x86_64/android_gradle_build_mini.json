@@ -1,0 +1,16 @@
+{
+  "buildFiles": [
+    "/Users/apple/AndroidStudioProjects/jniLibWallet/app/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/apple/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/apple/AndroidStudioProjects/jniLibWallet/app/.externalNativeBuild/cmake/release/x86_64 --target clean"
+  ],
+  "libraries": {
+    "fastmode-Release-x86_64": {
+      "artifactName": "fastmode",
+      "buildCommand": "/Users/apple/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/apple/AndroidStudioProjects/jniLibWallet/app/.externalNativeBuild/cmake/release/x86_64 --target fastmode",
+      "abi": "x86_64",
+      "output": "/Users/apple/AndroidStudioProjects/jniLibWallet/app/build/intermediates/cmake/release/obj/x86_64/libfastmode.so"
+    }
+  }
+}

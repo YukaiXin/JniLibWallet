@@ -1,0 +1,4 @@
+# ninja log v5
+1	57	0	CMakeFiles/fastmode.dir/src/main/cpp/fastmode.c.o	3f2db3ef4d376b78
+0	86	0	CMakeFiles/fastmode.dir/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.cpp.o	2ac4bd2fc91f6b9c
+86	128	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libfastmode.so	a103818f38a27dbb
