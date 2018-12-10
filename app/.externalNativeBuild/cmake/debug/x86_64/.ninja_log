@@ -1,6 +1,19 @@
 # ninja log v5
-0	52	0	CMakeFiles/fastmode.dir/src/main/cpp/fastmode.c.o	9cab09d8cfea2ca1
-0	54	0	CMakeFiles/fastmode.dir/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.cpp.o	f467afc32789cca
-1	59	0	CMakeFiles/fastmode.dir/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.cpp.o	f467afc32789cca
-0	78	0	CMakeFiles/fastmode.dir/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.cpp.o	f467afc32789cca
-78	111	0	../../../../build/intermediates/cmake/debug/obj/x86_64/libfastmode.so	f9c89a28df872bfd
+1	55	0	CMakeFiles/fastmode.dir/src/main/cpp/fastmode.c.o	9cab09d8cfea2ca1
+0	82	0	CMakeFiles/fastmode.dir/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.cpp.o	f467afc32789cca
+82	119	0	../../../../build/intermediates/cmake/debug/obj/x86_64/libfastmode.so	f9c89a28df872bfd
+0	53	0	CMakeFiles/fastmode.dir/src/main/cpp/fastmode.c.o	9cab09d8cfea2ca1
+0	82	0	CMakeFiles/fastmode.dir/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.cpp.o	f467afc32789cca
+82	116	0	../../../../build/intermediates/cmake/debug/obj/x86_64/libfastmode.so	f9c89a28df872bfd
+2	58	0	CMakeFiles/fastmode.dir/src/main/cpp/fastmode.c.o	9cab09d8cfea2ca1
+0	90	0	CMakeFiles/fastmode.dir/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.cpp.o	f467afc32789cca
+90	132	0	../../../../build/intermediates/cmake/debug/obj/x86_64/libfastmode.so	f9c89a28df872bfd
+1	69	0	CMakeFiles/fastmode.dir/src/main/cpp/fastmode.c.o	9cab09d8cfea2ca1
+0	458	0	CMakeFiles/fastmode.dir/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.cpp.o	f467afc32789cca
+458	498	0	../../../../build/intermediates/cmake/debug/obj/x86_64/libfastmode.so	f9c89a28df872bfd
+3	59	0	CMakeFiles/fastmode.dir/src/main/cpp/fastmode.c.o	9cab09d8cfea2ca1
+1	447	0	CMakeFiles/fastmode.dir/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.cpp.o	f467afc32789cca
+447	484	0	../../../../build/intermediates/cmake/debug/obj/x86_64/libfastmode.so	f9c89a28df872bfd
+2	75	0	CMakeFiles/fastmode.dir/src/main/cpp/fastmode.c.o	9cab09d8cfea2ca1
+1	471	0	CMakeFiles/fastmode.dir/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.cpp.o	f467afc32789cca
+471	511	0	../../../../build/intermediates/cmake/debug/obj/x86_64/libfastmode.so	f9c89a28df872bfd

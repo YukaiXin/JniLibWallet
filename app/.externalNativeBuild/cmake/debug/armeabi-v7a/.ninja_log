@@ -1,4 +1,19 @@
 # ninja log v5
-1	57	0	CMakeFiles/fastmode.dir/src/main/cpp/fastmode.c.o	3f2db3ef4d376b78
-0	86	0	CMakeFiles/fastmode.dir/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.cpp.o	2ac4bd2fc91f6b9c
-86	128	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libfastmode.so	a103818f38a27dbb
+1	60	0	CMakeFiles/fastmode.dir/src/main/cpp/fastmode.c.o	bb880f18f2eed325
+1	91	0	CMakeFiles/fastmode.dir/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.cpp.o	1e79b93ce83261a8
+91	136	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libfastmode.so	2abc3c758830c66d
+1	59	0	CMakeFiles/fastmode.dir/src/main/cpp/fastmode.c.o	bb880f18f2eed325
+1	92	0	CMakeFiles/fastmode.dir/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.cpp.o	1e79b93ce83261a8
+93	134	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libfastmode.so	2abc3c758830c66d
+1	57	0	CMakeFiles/fastmode.dir/src/main/cpp/fastmode.c.o	bb880f18f2eed325
+0	90	0	CMakeFiles/fastmode.dir/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.cpp.o	1e79b93ce83261a8
+90	134	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libfastmode.so	2abc3c758830c66d
+2	62	0	CMakeFiles/fastmode.dir/src/main/cpp/fastmode.c.o	bb880f18f2eed325
+1	428	0	CMakeFiles/fastmode.dir/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.cpp.o	1e79b93ce83261a8
+428	476	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libfastmode.so	2abc3c758830c66d
+1	60	0	CMakeFiles/fastmode.dir/src/main/cpp/fastmode.c.o	bb880f18f2eed325
+1	441	0	CMakeFiles/fastmode.dir/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.cpp.o	1e79b93ce83261a8
+441	486	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libfastmode.so	2abc3c758830c66d
+1	59	0	CMakeFiles/fastmode.dir/src/main/cpp/fastmode.c.o	bb880f18f2eed325
+1	419	0	CMakeFiles/fastmode.dir/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.cpp.o	1e79b93ce83261a8
+419	465	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libfastmode.so	2abc3c758830c66d

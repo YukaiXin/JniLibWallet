@@ -55,7 +55,7 @@ build CMakeFiles/fastmode.dir/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.
   DEFINES = -Dfastmode_EXPORTS
   DEP_FILE = CMakeFiles/fastmode.dir/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.cpp.o.d
   FLAGS = -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -O2 -DNDEBUG  -fPIC
-  INCLUDES = -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include
+  INCLUDES = -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sources/android/support/include -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include
   IN_ABS = /Users/apple/AndroidStudioProjects/jniLibWallet/app/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.cpp
   OBJECT_DIR = CMakeFiles/fastmode.dir
   OBJECT_FILE_DIR = CMakeFiles/fastmode.dir/src/main/cpp
@@ -74,10 +74,10 @@ build CMakeFiles/fastmode.dir/src/main/cpp/fastmode.c.o: C_COMPILER__fastmode ..
 #############################################
 # Link the shared library ../../../../build/intermediates/cmake/release/obj/x86/libfastmode.so
 
-build ../../../../build/intermediates/cmake/release/obj/x86/libfastmode.so: CXX_SHARED_LIBRARY_LINKER__fastmode CMakeFiles/fastmode.dir/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.cpp.o CMakeFiles/fastmode.dir/src/main/cpp/fastmode.c.o | /Users/apple/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86/usr/lib/liblog.so
+build ../../../../build/intermediates/cmake/release/obj/x86/libfastmode.so: CXX_SHARED_LIBRARY_LINKER__fastmode CMakeFiles/fastmode.dir/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.cpp.o CMakeFiles/fastmode.dir/src/main/cpp/fastmode.c.o | /Users/apple/Library/Android/sdk/ndk-bundle/platforms/android-19/arch-x86/usr/lib/liblog.so
   LANGUAGE_COMPILE_FLAGS = -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -O2 -DNDEBUG
-  LINK_FLAGS = -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -nostdlib++ --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86 -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -L/Users/apple/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86 -Wl,--no-undefined -Wl,-z,noexecstack -Qunused-arguments -Wl,-z,relro -Wl,-z,now
-  LINK_LIBRARIES = -llog -latomic -lm "/Users/apple/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86/libc++_static.a" "/Users/apple/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86/libc++abi.a"
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -nostdlib++ --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/platforms/android-19/arch-x86 -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -L/Users/apple/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86 -Wl,--no-undefined -Wl,-z,noexecstack -Qunused-arguments -Wl,-z,relro -Wl,-z,now
+  LINK_LIBRARIES = -llog -latomic -lm "/Users/apple/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86/libc++_static.a" "/Users/apple/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86/libc++abi.a" "/Users/apple/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86/libandroid_support.a"
   OBJECT_DIR = CMakeFiles/fastmode.dir
   POST_BUILD = :
   PRE_LINK = :

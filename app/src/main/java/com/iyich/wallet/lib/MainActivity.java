@@ -1,5 +1,6 @@
 package com.iyich.wallet.lib;
 
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements FastModeCallback,
         testData = new byte[100];
 
         for (int i =0; i < testData.length ; i++){
-            testData[i] = (byte) (i & 0xFF);
+            testData[i] = (byte) ((254- i) & 0xFF);
         }
         Log.d("kxyu","   "+Convert.bytesToHexString(testData));
         tvTXT.setOnClickListener(this);
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements FastModeCallback,
 
     @Override
     public void sendData(byte[] data) {
-        Toast.makeText(this, "  C -> java   ",Toast.LENGTH_LONG).show();
+//        Toast.makeText(this, "  C -> java   ",Toast.LENGTH_LONG).show();
         Log.d("kxyu"," callbaok    "+Convert.bytesToHexString(data));
 //        tvTXT.setText(Convert.bytesToHexString(data));
     }
@@ -53,8 +54,21 @@ public class MainActivity extends AppCompatActivity implements FastModeCallback,
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.sample_text:
+                new Thread(){
+                    @Override
+                    public void run() {
+                        for (int i=0;i < 2; i ++){
+                            fastModeJNI.sendData(testData, 100);
+                        }
+                    }
+                }.start();
+//                new Handler().post(new Runnable() {
+//                    @Override
+//                    public void run() {
+//
 
-                fastModeJNI.sendData(testData, 100);
+//                    }
+//                });
                 break;
         }
     }

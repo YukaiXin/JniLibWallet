@@ -12,6 +12,7 @@ public class FastModeJNI {
 
     public FastModeJNI(FastModeCallback fastModeCallback) {
         this.fastModeCallback = fastModeCallback;
+//        JniInit();
     }
 
     public void SendBuff(byte[] data){
@@ -25,4 +26,5 @@ public class FastModeJNI {
 
     public native boolean sendData(byte[] data, int length);
     public native boolean onReceive(byte[] data, int length);
+//    public native void JniInit();
 }

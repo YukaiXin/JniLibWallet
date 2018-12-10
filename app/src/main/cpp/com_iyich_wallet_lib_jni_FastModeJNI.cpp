@@ -3,58 +3,87 @@
 #include "com_iyich_wallet_lib_jni_FastModeJNI.h"
 #include "fastmode.c"
 #include "package_type.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 #include <android/log.h>
+#include <iostream>
+
 #define LOG_TAG "System.out"
 #define LOGD(...) __android_log_print(ANDROID_LOG_DEBUG, LOG_TAG, __VA_ARGS__)
 #define LOGI(...) __android_log_print(ANDROID_LOG_INFO, LOG_TAG, __VA_ARGS__)
 
 /* Header for class com_iyich_wallet_lib_jni_FastModeJNI */
-JNIEnv *_env;
-jobject _obj;
+JavaVM *jvm;
+//JNIEnv *_env;
+jobject gobal_obj;
 
 bool receiveBuff(int pos,unsigned char *data, int len){
-    jbyteArray dataArray =  _env -> NewByteArray(len);
-    jbyte * jbyteP = _env->GetByteArrayElements(dataArray, 0);
-    memcpy(jbyteP, data, len);
 
-    jclass fastClass = _env ->GetObjectClass(_obj);
+    JNIEnv* _env;
+    int envStatus = jvm->GetEnv(reinterpret_cast<void **>(&_env), JNI_VERSION_1_6);
+    if(envStatus == JNI_EDETACHED){
+        LOGI("============== GetEnv: not attached  ");
+        if (jvm->AttachCurrentThread(&_env, NULL) != 0) {
+            LOGI(" ================================== Attach fail ! !!!  ");
+            return false;
+        }
+        goto OK;
+    } else if(envStatus == JNI_OK){
+        goto OK;
+    } else if(envStatus == JNI_EVERSION){
+        LOGI(" ==================================   JNI Version not support !!!   ");
+        return false;
+    }
+
+    OK:
+    jbyteArray dataArray =  _env -> NewByteArray(len);
+    _env->SetByteArrayRegion(dataArray, 0, len, reinterpret_cast<const jbyte *>(data));
+    jbyte * jbyteP = _env->GetByteArrayElements(dataArray, 0);
+    jclass fastClass = _env ->GetObjectClass(gobal_obj);
+
     jmethodID jmethodID1 = _env->GetMethodID(fastClass, "RecieveBuff", "([BI)V");
-    _env->CallVoidMethod(_obj, jmethodID1, dataArray, len);
+    _env->CallVoidMethod(gobal_obj, jmethodID1, dataArray, len);
 
     _env ->ReleaseByteArrayElements(dataArray, jbyteP,  JNI_ABORT);
     return false;
 }
+
+
 
 bool sendBuff(unsigned char*data, int len){
 
-    jbyteArray dataArray =  _env -> NewByteArray(len);
-    jbyte * jbyteP = _env->GetByteArrayElements(dataArray, 0);
-    memcpy(jbyteP, data, len);
+    JNIEnv* _env;
+    int envStatus = jvm->GetEnv(reinterpret_cast<void **>(&_env), JNI_VERSION_1_6);
+    if(envStatus == JNI_EDETACHED){
+        LOGI(" ==============GetEnv: not attached  ");
+        if (jvm->AttachCurrentThread(&_env, NULL) != 0) {
+            LOGI(" ================================== Attach fail ! !!!  ");
+            return false;
+        }
+        goto OK;
+    } else if(envStatus == JNI_OK){
+        LOGI(" ============= JNI_OK 111 !!!  ");
+        goto OK;
+    } else if(envStatus == JNI_EVERSION){
+        LOGI(" ==================================   JNI Version not support !!!   ");
+        return false;
+    }
 
-    jclass fastClass = _env ->GetObjectClass(_obj);
+    OK:
+    jbyteArray dataArray =  _env -> NewByteArray(len);
+    _env->SetByteArrayRegion(dataArray, 0, len, reinterpret_cast<const jbyte *>(data));
+    jbyte * jbyteP = _env->GetByteArrayElements(dataArray, 0);
+
+    jclass fastClass = _env ->GetObjectClass(gobal_obj);
     jmethodID jmethodID1 = _env->GetMethodID(fastClass, "SendBuff", "([B)V");
-    _env->CallVoidMethod(_obj, jmethodID1, dataArray);
+    _env->CallVoidMethod(gobal_obj, jmethodID1, dataArray);
 
     _env ->ReleaseByteArrayElements(dataArray, jbyteP,  JNI_ABORT);
-    return false;
+
+    return true;
 }
 
-unsigned char *byteArrayToByte(JNIEnv* env, jbyteArray byteArray) {
-    jbyte *pjb =  env->GetByteArrayElements(byteArray, 0);
-    jsize jlen = env ->GetArrayLength(byteArray);
-    int len =  jlen;
-    unsigned char *byBuf = NULL;
-
-    if (len > 0) {
-        byBuf =  (unsigned char *)malloc(len + 1);
-        memcpy(byBuf, pjb, len);
-    } else {
-        byBuf = (unsigned char*) malloc(1);
-    }
-    env->ReleaseByteArrayElements(byteArray, pjb, 0);
-    return byBuf;
-}
 
 /*
  * Class:     com_iyich_wallet_lib_jni_FastModeJNI
@@ -63,15 +92,16 @@ unsigned char *byteArrayToByte(JNIEnv* env, jbyteArray byteArray) {
  */
 JNIEXPORT jboolean JNICALL Java_com_iyich_wallet_lib_jni_FastModeJNI_sendData
 (JNIEnv *env, jobject jobj, jbyteArray data, jint len){
-    LOGI(" ......From C.....");
-    _env = env;
-    _obj = jobj;
-    jbyte* jbyte1 = env ->GetByteArrayElements(data, 0);
-    unsigned char* buf=byteArrayToByte(env, data);
 
-    LOGI(" ......From C.....");
-    return onSendBlock(buf, len, sendBuff);
+    env->GetJavaVM(&jvm);
+    gobal_obj = env->NewGlobalRef(jobj);
+
+    unsigned char* buffer = reinterpret_cast<unsigned char *>(env->GetByteArrayElements(data, 0));
+    return onSendBlock(buffer, len, sendBuff);
 }
+
+
+
 /*
  * Class:     com_iyich_wallet_lib_jni_FastModeJNI
  * Method:    onReceive
@@ -79,14 +109,14 @@ JNIEXPORT jboolean JNICALL Java_com_iyich_wallet_lib_jni_FastModeJNI_sendData
  */
 JNIEXPORT jboolean JNICALL Java_com_iyich_wallet_lib_jni_FastModeJNI_onReceive
 (JNIEnv *env, jobject jobj, jbyteArray data, jint len){
-
-    _env = env;
-    _obj = jobj;
-
-
-    jbyte* jbyte1 = env ->GetByteArrayElements(data, 0);
-    unsigned char* buf=byteArrayToByte(env, data);
-    return onMRecieve(byteArrayToByte(env, data), len, sendBuff, receiveBuff);
+    gobal_obj = env->NewGlobalRef(jobj);
+    unsigned char* buffer = reinterpret_cast<unsigned char *>(env->GetByteArrayElements(data, 0));
+    return onMRecieve(buffer, len, sendBuff, receiveBuff);
 }
+
+JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM *vm, void** reserved){
+
+}
+
 
 
