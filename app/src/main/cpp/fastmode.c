@@ -124,26 +124,24 @@ static bool onSendPackage(unsigned char *senddata, unsigned int sendlen,  sendti
     // send head of big package
     memset(prxmap, 0, sizeof(PackData));
     fill_head_package(&tx, sendlen);
-    printf("ACK_WITH_MAP: send Head\r");
 //    printf("：：%s\n",pack->data);
     getack = false;
     retry = 0;
     while(1){
         if(count++ % 2500 == 0){
             if(retry ++  > 3){
-                printf("onSendBlock  send head failed\r\n");
                 send_flag = false;
                 return false;
             }
             if(retry > 1){
-                printf("onSendBlock: send Head in cycle\r\n");
+//                printf("onSendBlock: send Head in cycle\r\n");
             }
             send((unsigned char*)&tx, sizeof(PackData));
         }else{
-            usleep(400);
+            usleep(400);//1 400
         }
         if(getack){
-            printf("onSendBlock: send Head succ\r\n");
+//            printf("onSendBlock: send Head succ\r\n");
             count = 0;
             getack = false;
             break;;
@@ -153,10 +151,8 @@ static bool onSendPackage(unsigned char *senddata, unsigned int sendlen,  sendti
     do{
         pack->msgid = DATA;
         count = 0;
-        printf("send data len:%d\n", sendlen);
         for(i = 0; i < sendlen; i += PACK_CONTENT_LENGTH){
             unsigned char pos = i/PACK_CONTENT_LENGTH;
-            printf("send pack:%d\n", i);
             if(i + PACK_CONTENT_LENGTH <= sendlen){
                 tlen = PACK_CONTENT_LENGTH;
             }else{
@@ -168,9 +164,9 @@ static bool onSendPackage(unsigned char *senddata, unsigned int sendlen,  sendti
                 pack->msgindex = i/PACK_CONTENT_LENGTH;
                 memcpy(pack->data, &senddata[i], tlen);
                 send((unsigned char*)pack,sizeof(PackData));
-                usleep(2000);
+                usleep(1500);//2 2000
             }else{
-                printf("map[%d] = %02x\n", pos/8, prxmap->data[pos/8]);
+//                printf("map[%d] = %02x\n", pos/8, prxmap->data[pos/8]);
             }
         }
         
@@ -179,7 +175,7 @@ static bool onSendPackage(unsigned char *senddata, unsigned int sendlen,  sendti
         count = 0;
         retry = 0;
         fill_ack_package(pack, SACK,ACK_GET_MAP,0,NULL);
-        usleep(1000);
+        usleep(1000);//3 1000
         while(1){
             if(count++%2500 == 0){
                 if(retry++ >5){
@@ -188,7 +184,7 @@ static bool onSendPackage(unsigned char *senddata, unsigned int sendlen,  sendti
                 }
                 send((unsigned char*)pack,sizeof(PackData));
             }else{
-                usleep(400);
+                usleep(400); //4 400
             }
             
             if(getack){
@@ -203,15 +199,15 @@ static bool onSendPackage(unsigned char *senddata, unsigned int sendlen,  sendti
                 
                 if(send_succ){
                     fill_ack_package(pack, SACK,ACK_TAIL,0,NULL);
-                    usleep(1000);
+                    usleep(1000); //5 1000
                     send((unsigned char*)pack,sizeof(PackData));
-                    usleep(1000);
+                    usleep(1000); //6 1000
                     send((unsigned char*)pack,sizeof(PackData));
-                    printf("onSendBlock  send package succ\r\n");
+//                    printf("onSendBlock  send package succ\r\n");
                     send_flag = false;
                     return true;
                 }else{
-                    printf("onSendBlock  send package lost data\r\n");
+//                    printf("onSendBlock  send package lost data\r\n");
                     break;
                 }
             }
@@ -249,7 +245,7 @@ static bool mRecvive(unsigned char*data, unsigned char len, sendtiny sen, recvCa
     unsigned int i;
     unsigned char *rx_buff = recv_block_buff.buf;
     int pos;
-    printf("ble2:mRecvive:");
+//    printf("ble2:mRecvive:");
     for(i = 0; i < len ;i++)
         printf("%02x ", data[i]);
     printf("\n");
@@ -257,7 +253,7 @@ static bool mRecvive(unsigned char*data, unsigned char len, sendtiny sen, recvCa
     if(pack->istiny ){
         if(send_flag){
             send_flag = false;
-            usleep(5000);
+            usleep(4000);//7 5000
             // return false;
         }
         //send ack
@@ -270,15 +266,15 @@ static bool mRecvive(unsigned char*data, unsigned char len, sendtiny sen, recvCa
         return true;
     }
     
-    printf("msgid:%d \n", pack->msgid);
+//    printf("msgid:%d \n", pack->msgid);
     switch(pack->msgid){
         case HEAD:
             recv_block_len = pack->data[0] + (pack->data[1] << 8);
             if(send_flag ){
                 if((recv_block_len > 0)){
                     send_flag = false;
-                    printf("mRecvive: Force to stop send?\r\n");
-                    usleep(5000);
+//                    printf("mRecvive: Force to stop send?\r\n");
+                    usleep(4500); //7 5000
                 }
                 return false;
             }
@@ -290,7 +286,7 @@ static bool mRecvive(unsigned char*data, unsigned char len, sendtiny sen, recvCa
             memset(&recv_block_map, 0x00,sizeof(recv_block_map));
             recv_block_map.msgid = RACK;
             recv_block_map.msgindex = ACK_HEAD;
-            printf("mRecvive: send Head echo\r\n");
+//            printf("mRecvive: send Head echo\r\n");
             sen((unsigned char*)&recv_block_map, sizeof(PackData));
             break;
             
@@ -303,7 +299,7 @@ static bool mRecvive(unsigned char*data, unsigned char len, sendtiny sen, recvCa
                 getack = true;
                 recv_block_map.msgid = RACK;
                 recv_block_map.msgindex = ACK_WITH_MAP;
-                usleep(5000);
+                usleep(4500);//8
                 sen((unsigned char*)&recv_block_map, sizeof(PackData));
                 
             }else if(pack->msgindex == ACK_TAIL){
@@ -313,7 +309,7 @@ static bool mRecvive(unsigned char*data, unsigned char len, sendtiny sen, recvCa
                 //send_flag = false;
                 return true;
             }else{
-                printf("SACK unkown state:%d", pack->msgindex);
+//                printf("SACK unkown state:%d", pack->msgindex);
             }
         }
             break;
@@ -321,19 +317,19 @@ static bool mRecvive(unsigned char*data, unsigned char len, sendtiny sen, recvCa
             printf("Rack \n");
             if (send_flag && !getack) {
                 if(pack->msgindex == ACK_HEAD){
-                    printf("RACK and ACK_HEAD\n");
+//                    printf("RACK and ACK_HEAD\n");
                     getack = true;
                     return true;
                 }else if(pack->msgindex == ACK_WITH_MAP){
                     memcpy(send_block_map.data, pack->data, PACK_CONTENT_LENGTH);
-                    printf("RACK and ACK_WITH_MAP\n");
+//                    printf("RACK and ACK_WITH_MAP\n");
                     getack = true;
                     return true;
                 }else{
-                    printf("RACK unkown state:%d", pack->msgindex);
+//                    printf("RACK unkown state:%d", pack->msgindex);
                 }
             }else {
-                printf("send_flag:%d getack:%d\n", send_flag, getack);
+//                printf("send_flag:%d getack:%d\n", send_flag, getack);
             }
             break;
         case DATA:
@@ -358,7 +354,7 @@ static bool mRecvive(unsigned char*data, unsigned char len, sendtiny sen, recvCa
 bool onMRecieve(unsigned char*data, unsigned char len, sendtiny sen, recvCallback cb)
 {
     if(len == 0){
-        printf("Length is not 20\r\n");
+//        printf("Length is not 20\r\n");
         return false;
     }
     return mRecvive(data, len, sen, cb);

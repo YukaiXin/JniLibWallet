@@ -1,16 +1,16 @@
 {
   "buildFiles": [
-    "/Users/apple/AndroidStudioProjects/jniLibWallet/app/CMakeLists.txt"
+    "/Users/apple/Desktop/JniLibWallet/app/CMakeLists.txt"
   ],
   "cleanCommands": [
-    "/Users/apple/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/apple/AndroidStudioProjects/jniLibWallet/app/.externalNativeBuild/cmake/debug/x86_64 --target clean"
+    "/Users/apple/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/x86_64 --target clean"
   ],
   "libraries": {
-    "fastmode-Debug-x86_64": {
-      "artifactName": "fastmode",
-      "buildCommand": "/Users/apple/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/apple/AndroidStudioProjects/jniLibWallet/app/.externalNativeBuild/cmake/debug/x86_64 --target fastmode",
+    "secLinkJni-Debug-x86_64": {
+      "artifactName": "secLinkJni",
+      "buildCommand": "/Users/apple/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/x86_64 --target secLinkJni",
       "abi": "x86_64",
-      "output": "/Users/apple/AndroidStudioProjects/jniLibWallet/app/build/intermediates/cmake/debug/obj/x86_64/libfastmode.so"
+      "output": "/Users/apple/Desktop/JniLibWallet/app/build/intermediates/cmake/debug/obj/x86_64/libsecLinkJni.so"
     }
   }
 }

@@ -4,15 +4,18 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.iyich.wallet.lib"
-        minSdkVersion 19
+        minSdkVersion 16
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         externalNativeBuild {
             cmake {
+                arguments '-DANDROID_PLATFORM=android-18',
+                        '-DANDROID_TOOLCHAIN=clang'
                 abiFilters   "arm64-v8a", "x86", "armeabi-v7a", "x86_64"
-                cppFlags "-frtti -fexceptions"
+//                cppFlags "-frtti -fexceptions"
+                cFlags "-std=gnu11", "-Os"
             }
         }
     }
