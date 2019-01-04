@@ -16,6 +16,7 @@ public class SecLinkJni {
 
     public SecLinkJni() {
 
+
     }
 
 
@@ -25,5 +26,7 @@ public class SecLinkJni {
     }
 
     public native byte[] veritySession(byte[] hPriKey, byte[] R, byte[] encryptedData, byte[] essionHash);
+
+
 
 }

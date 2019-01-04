@@ -9,11 +9,11 @@ extern "C" {
 #endif
 /*
  * Class:     com_iyich_wallet_lib_jni_SecLinkJni
- * Method:    ecdhMultipy
+ * Method:    aes_cbc_sha256_encrypt
  * Signature: ([B[B)[B
  */
-JNIEXPORT jbyteArray JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_ecdhMultipy
-  (JNIEnv *, jobject, jbyteArray, jbyteArray);
+JNIEXPORT jbyteArray JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_aes_cbc_sha256_encrypt
+  (JNIEnv *, jobject, jbyteArray, jbyteArray, jbyteArray);
 
 /*
  * Class:     com_iyich_wallet_lib_jni_SecLinkJni

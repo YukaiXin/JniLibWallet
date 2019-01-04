@@ -58,9 +58,6 @@ const uint8_t *fromhex(const char *str)
     return buf;
 }
 
-void test(){
-
-}
 
 
 
@@ -71,7 +68,7 @@ void test(){
  */
 JNIEXPORT jbyteArray JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_veritySession
         (JNIEnv *env, jobject jobj, jbyteArray hPrivateKey, jbyteArray R, jbyteArray encryptedData, jbyteArray essionHash){
-    
+
 
     char const * salt = "EDCH key salt9759";
     uint8_t S[65];
@@ -94,11 +91,11 @@ JNIEXPORT jbyteArray JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_veritySess
 
     jbyteArray aesDataArray =  (*env) -> NewByteArray(env, 32);
     (*env) -> SetByteArrayRegion(env, aesDataArray, 0, 32, aes_key);
-    jbyte * aesJbyteP = (*env)-(env, aesDataArray, 0);
+    jbyte * aesJbyteP = (*env)->GetByteArrayElements(env, aesDataArray, 0);
 
     jbyteArray dataArray =  (*env) -> NewByteArray(env, 32);
     (*env) -> SetByteArrayRegion(env, dataArray, 0, 32, obuf);
-    jbyte * jbyteP = (*env)-(env, dataArray, 0);
+    jbyte * jbyteP = (*env)->GetByteArrayElements(env, dataArray, 0);
 
     jclass fastClass = (*env) ->GetObjectClass(env, jobj);
 
@@ -109,7 +106,11 @@ JNIEXPORT jbyteArray JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_veritySess
     (*env) ->ReleaseByteArrayElements(env, aesDataArray, aesJbyteP, JNI_ABORT);
     (*env) ->ReleaseByteArrayElements(env, dataArray, jbyteP, JNI_ABORT);
 
+
     //TODO: sha256(obuf) ==  essionHash
 
-    return dataArray;
+//    sha256_Init()
+
+    return NULL;
 };
+

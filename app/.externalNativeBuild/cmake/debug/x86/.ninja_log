@@ -33,3 +33,7 @@
 501	589	0	CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/modm-donna-32bit.c.o	a0aea98085f14df6
 303	947	0	CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/aes/aestab.c.o	4c0e341094f9eae1
 947	991	0	../../../../build/intermediates/cmake/debug/obj/x86/libsecLinkJni.so	69e79da16b0fb3a
+2	58	0	CMakeFiles/secLinkJni.dir/src/main/cpp/seclink.c.o	d93e5cc9d6490d98
+58	141	0	../../../../build/intermediates/cmake/debug/obj/x86/libsecLinkJni.so	69e79da16b0fb3a
+1	51	0	CMakeFiles/secLinkJni.dir/src/main/cpp/seclink.c.o	d93e5cc9d6490d98
+52	95	0	../../../../build/intermediates/cmake/debug/obj/x86/libsecLinkJni.so	69e79da16b0fb3a
