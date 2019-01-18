@@ -75,3 +75,5 @@
 996	1042	0	../../../../build/intermediates/cmake/debug/obj/x86_64/libsecLinkJni.so	de2827c66e420244
 1	51	0	CMakeFiles/secLinkJni.dir/src/main/cpp/seclink.c.o	45a9836413d44f0a
 51	97	0	../../../../build/intermediates/cmake/debug/obj/x86_64/libsecLinkJni.so	de2827c66e420244
+1	176	0	CMakeFiles/secLinkJni.dir/src/main/cpp/seclink.c.o	45a9836413d44f0a
+1	55	0	../../../../build/intermediates/cmake/debug/obj/x86_64/libsecLinkJni.so	de2827c66e420244

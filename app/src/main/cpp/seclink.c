@@ -102,14 +102,15 @@ JNIEXPORT jbyteArray JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_veritySess
     jmethodID jmethodID1 = (*env)->GetMethodID(env, fastClass, "setAesKey", "([B[B)V");
     (*env)->CallVoidMethod(env,jobj, jmethodID1, aesDataArray, dataArray);
 
-
     (*env) ->ReleaseByteArrayElements(env, aesDataArray, aesJbyteP, JNI_ABORT);
     (*env) ->ReleaseByteArrayElements(env, dataArray, jbyteP, JNI_ABORT);
 
 
     //TODO: sha256(obuf) ==  essionHash
 
+
 //    sha256_Init()
+
 
     return NULL;
 };

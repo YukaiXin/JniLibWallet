@@ -877,7 +877,7 @@ void sha256_Transform(const sha2_word32* state_in, const sha2_word32* data, sha2
 #endif /* SHA2_UNROLL_TRANSFORM */
 
 void sha256_Update(SHA256_CTX* context, const sha2_byte *data, size_t len) {
-	unsigned int	freespace, usedspace;
+	unsigned int freespace, usedspace;
 
 	if (len == 0) {
 		/* Calling with no data is valid - we do nothing */

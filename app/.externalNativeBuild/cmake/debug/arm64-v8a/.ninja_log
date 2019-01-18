@@ -81,3 +81,5 @@
 1000	1051	0	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libsecLinkJni.so	eb11845e038a2a9e
 1	47	0	CMakeFiles/secLinkJni.dir/src/main/cpp/seclink.c.o	6da4be1012df64ca
 47	111	0	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libsecLinkJni.so	eb11845e038a2a9e
+1	51	0	CMakeFiles/secLinkJni.dir/src/main/cpp/seclink.c.o	6da4be1012df64ca
+1	54	0	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libsecLinkJni.so	eb11845e038a2a9e
