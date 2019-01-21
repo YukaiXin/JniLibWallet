@@ -10,7 +10,7 @@
 #include <stdbool.h>
 #include <unistd.h>
 #include <string.h>
-#include "package_type.h"
+#include "../package_type.h"
 #include "fastmode.h"
 
 

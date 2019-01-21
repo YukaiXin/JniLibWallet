@@ -8,13 +8,115 @@
 #include "sec/secp256k1.h"
 #include "sec/pbkdf2.h"
 #include "sec/sing/aes/aes.h"
+#include "bleProtocol/fastmode.h"
 
 
 #define LOG_TAG "System.out"
 #define LOGD(...) __android_log_print(ANDROID_LOG_DEBUG, LOG_TAG, __VA_ARGS__)
 #define LOGI(...) __android_log_print(ANDROID_LOG_INFO, LOG_TAG, __VA_ARGS__)
-#define FROMHEX_MAXLEN 512
 
+/* Header for class com_iyich_wallet_lib_jni_FastModeJNI */
+JavaVM *jvm;
+//JNIEnv *_env;
+jobject gobal_obj;
+
+void callBackRecvBuff(JNIEnv* _env, int pos, unsigned char *data, int len){
+    jbyteArray dataArray =  (*_env) -> NewByteArray(_env, len);
+    (*_env) -> SetByteArrayRegion(_env, dataArray, 0, len, (jbyte *)data);
+    jbyte * jbyteP = (*_env) -> GetByteArrayElements(_env, dataArray, 0);
+    jclass fastClass = (*_env) -> GetObjectClass(_env, gobal_obj);
+
+    jmethodID jmethodID1 = (*_env) -> GetMethodID(_env, fastClass, "RecieveBuff", "([BI)V");
+    (*_env)->CallVoidMethod(_env, gobal_obj, jmethodID1, dataArray, len);
+
+    (*_env) ->ReleaseByteArrayElements(_env, dataArray, jbyteP,  JNI_ABORT);
+}
+
+bool receiveBuff(int pos,unsigned char *data, int len){
+
+    JNIEnv* _env;
+    int envStatus = (*jvm)->GetEnv(jvm, (void**)&_env, JNI_VERSION_1_6);
+    if(envStatus == JNI_EDETACHED){
+//        LOGI("============== GetEnv: not attached  ");
+        if ((*jvm)->AttachCurrentThread(jvm, &_env, NULL) != 0) {
+//            LOGI(" ================================== Attach fail ! !!!  ");
+            return false;
+        }
+        callBackRecvBuff(_env, pos, data, len);
+    } else if(envStatus == JNI_OK){
+        callBackRecvBuff(_env, pos, data, len);
+    } else if(envStatus == JNI_EVERSION){
+        return false;
+    }
+
+    return true;
+}
+
+void callBackSendBuff(JNIEnv *_env,unsigned char*data, int len){
+    jbyteArray dataArray =  (*_env) -> NewByteArray(_env, len);
+    (*_env) -> SetByteArrayRegion(_env, dataArray, 0, len, (const jbyte *)(data));
+    jbyte * jbyteP = (*_env) -> GetByteArrayElements(_env, dataArray, 0);
+
+    jclass fastClass = (*_env) -> GetObjectClass(_env, gobal_obj);
+    jmethodID jmethodID1 = (*_env) -> GetMethodID(_env, fastClass, "SendBuff", "([B)V");
+    (*_env)->CallVoidMethod(gobal_obj, jmethodID1, dataArray);
+
+    (*_env) ->ReleaseByteArrayElements(_env, dataArray, jbyteP,  JNI_ABORT);
+
+}
+
+bool sendBuff(unsigned char*data, int len){
+
+    JNIEnv* _env;
+    int envStatus = (*jvm)->GetEnv(jvm,(void **)&_env, JNI_VERSION_1_6);
+    if(envStatus == JNI_EDETACHED){
+//        LOGI(" ==============GetEnv: not attached  ");
+        if ((*jvm)->AttachCurrentThread(jvm, &_env, NULL) != 0) {
+//            LOGI(" ================================== Attach fail ! !!!  ");
+            return false;
+        }
+
+        callBackSendBuff(_env, data, len);
+    } else if(envStatus == JNI_OK){
+//        LOGI(" ============= JNI_OK 111 !!!  ");
+        callBackSendBuff(_env, data, len);
+    } else if(envStatus == JNI_EVERSION){
+//        LOGI(" ==================================   JNI Version not support !!!   ");
+        return false;
+    }
+
+    return true;
+}
+
+
+/*
+ * Class:     com_iyich_wallet_lib_jni_FastModeJNI
+ * Method:    sendData
+ * Signature: ([BI)Z
+ */
+JNIEXPORT jboolean JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_sendData
+        (JNIEnv *env, jobject jobj, jbyteArray data, jint len){
+
+    (*env) -> GetJavaVM(env, &jvm);
+    gobal_obj = (*env) -> NewGlobalRef(env, jobj);
+
+    unsigned char* buffer = (unsigned char *)((*env)->GetByteArrayElements(env, data, 0));
+    return onSendBlock(buffer, len, sendBuff);
+}
+
+
+
+/*
+ * Class:     com_iyich_wallet_lib_jni_FastModeJNI
+ * Method:    onReceive
+ * Signature: ([BI)Z
+ */
+JNIEXPORT jboolean JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_onReceive
+        (JNIEnv *env, jobject jobj, jbyteArray data, jint len){
+    gobal_obj = (*env) -> NewGlobalRef(env, jobj);
+    unsigned char* buffer = (unsigned char *)((*env)->GetByteArrayElements(env, data, 0));
+    return onMRecieve(buffer, len, sendBuff, receiveBuff);
+}
 
 
 int len(char const *p)
@@ -24,51 +126,12 @@ int len(char const *p)
     return i;
 }
 
-void hex_str(unsigned char *inchar, unsigned int len, unsigned char *outtxt)
-{
-    unsigned char hbit,lbit;
-    unsigned int i;
-    for(i=0;i<len;i++)
-    {
-        hbit = (*(inchar+i)&0xf0)>>4;
-        lbit = *(inchar+i)&0x0f;
-        if (hbit>9) outtxt[2*i]='A'+hbit-10;
-        else outtxt[2*i]='0'+hbit;
-        if (lbit>9) outtxt[2*i+1]='A'+lbit-10;
-        else    outtxt[2*i+1]='0'+lbit;
-    }
-    outtxt[2*i] = 0;
-}
-
-
-
-const uint8_t *fromhex(const char *str)
-{
-    static uint8_t buf[FROMHEX_MAXLEN];
-    size_t len = strlen(str) / 2;
-    if (len > FROMHEX_MAXLEN) len = FROMHEX_MAXLEN;
-    for (size_t i = 0; i < len; i++) {
-        uint8_t c = 0;
-        if (str[i * 2] >= '0' && str[i*2] <= '9') c += (str[i * 2] - '0') << 4;
-        if ((str[i * 2] & ~0x20) >= 'A' && (str[i*2] & ~0x20) <= 'F') c += (10 + (str[i * 2] & ~0x20) - 'A') << 4;
-        if (str[i * 2 + 1] >= '0' && str[i * 2 + 1] <= '9') c += (str[i * 2 + 1] - '0');
-        if ((str[i * 2 + 1] & ~0x20) >= 'A' && (str[i * 2 + 1] & ~0x20) <= 'F') c += (10 + (str[i * 2 + 1] & ~0x20) - 'A');
-        buf[i] = c;
-    }
-    return buf;
-}
-
-
-
-
-
 /*
  * Class:     com_iyich_wallet_lib_jni_SecLinkJni
  * Method:    veritySession
  */
 JNIEXPORT jbyteArray JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_veritySession
         (JNIEnv *env, jobject jobj, jbyteArray hPrivateKey, jbyteArray R, jbyteArray encryptedData, jbyteArray essionHash){
-
 
     char const * salt = "EDCH key salt9759";
     uint8_t S[65];
@@ -81,6 +144,7 @@ JNIEXPORT jbyteArray JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_veritySess
     uint8_t aes_key[32];
     uint8_t ibuf[32], obuf[16], iv[16];
     uint8_t* encryptedDataP = (uint8_t *) (*env)->GetByteArrayElements(env, encryptedData, NULL);
+    uint8_t* essionHashP = (uint8_t *) (*env)->GetByteArrayElements(env, essionHash, NULL);
 
     pbkdf2_hmac_sha256((uint8_t *)S, 65, salt, len(salt), 10, aes_key);//得到AES key
     aes_decrypt_key256(aes_key, &ctxd);
@@ -88,30 +152,21 @@ JNIEXPORT jbyteArray JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_veritySess
     memcpy(ibuf, encryptedDataP + 16, 32);
     aes_cbc_decrypt(ibuf, obuf, 32, iv, &ctxd);
 
-
     jbyteArray aesDataArray =  (*env) -> NewByteArray(env, 32);
     (*env) -> SetByteArrayRegion(env, aesDataArray, 0, 32, aes_key);
-    jbyte * aesJbyteP = (*env)->GetByteArrayElements(env, aesDataArray, 0);
 
-    jbyteArray dataArray =  (*env) -> NewByteArray(env, 32);
-    (*env) -> SetByteArrayRegion(env, dataArray, 0, 32, obuf);
-    jbyte * jbyteP = (*env)->GetByteArrayElements(env, dataArray, 0);
+    /*** sha 256 ***/
+    SHA256_CTX ctx1;
+    unsigned char buf2[SHA256_DIGEST_LENGTH];
+    sha256_Init(&ctx1);
+    sha256_Update(&ctx1, obuf, 32);
+    sha256_Final(&ctx1, buf2);
 
-    jclass fastClass = (*env) ->GetObjectClass(env, jobj);
-
-    jmethodID jmethodID1 = (*env)->GetMethodID(env, fastClass, "setAesKey", "([B[B)V");
-    (*env)->CallVoidMethod(env,jobj, jmethodID1, aesDataArray, dataArray);
-
-    (*env) ->ReleaseByteArrayElements(env, aesDataArray, aesJbyteP, JNI_ABORT);
-    (*env) ->ReleaseByteArrayElements(env, dataArray, jbyteP, JNI_ABORT);
-
-
-    //TODO: sha256(obuf) ==  essionHash
-
-
-//    sha256_Init()
-
-
-    return NULL;
+    int pass = memcmp(essionHashP, buf2, SHA256_DIGEST_LENGTH);
+    if(pass == 0){
+        return aesDataArray;
+    } else{
+        return NULL;
+    }
 };
 

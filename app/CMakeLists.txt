@@ -17,6 +17,7 @@ add_library( # Sets the name of the library.
         SHARED
 
         # Provides a relative path to your source file(s).
+        src/main/cpp/bleProtocol/fastmode.c
         src/main/cpp/seclink.c
         src/main/cpp/sec/ecdsa.c
         src/main/cpp/sec/secp256k1.c

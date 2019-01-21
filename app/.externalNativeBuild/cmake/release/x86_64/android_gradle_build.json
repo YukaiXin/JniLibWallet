@@ -19,6 +19,12 @@
 				
 				{
 					"flags" : "  --target=x86_64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -DsecLinkJni_EXPORTS  -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/x86_64-linux-android -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/bleProtocol/fastmode.c",
+					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -DsecLinkJni_EXPORTS  -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/x86_64-linux-android -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O2 -DNDEBUG  -fPIC      -c ",
 					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/seclink.c",
 					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/x86_64"
 				},

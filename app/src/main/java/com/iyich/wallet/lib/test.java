@@ -23,8 +23,6 @@ public class test {
 
 
 
-        secLinkJni = new SecLinkJni();
-
 
     }
 

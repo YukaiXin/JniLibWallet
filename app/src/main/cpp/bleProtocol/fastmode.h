@@ -9,7 +9,7 @@
 #ifndef __FASTMODE_H
 #define __FASTMODE_H
 
-#include "package_type.h"
+#include "../package_type.h"
 
 bool setBlock(unsigned char *block, unsigned int blocklen);
 bool sendBlock(PackData *data, sendtiny send);

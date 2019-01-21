@@ -9,19 +9,28 @@ extern "C" {
 #endif
 /*
  * Class:     com_iyich_wallet_lib_jni_SecLinkJni
- * Method:    aes_cbc_sha256_encrypt
- * Signature: ([B[B)[B
- */
-JNIEXPORT jbyteArray JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_aes_cbc_sha256_encrypt
-  (JNIEnv *, jobject, jbyteArray, jbyteArray, jbyteArray);
-
-/*
- * Class:     com_iyich_wallet_lib_jni_SecLinkJni
  * Method:    veritySession
  * Signature: ([B[B)Z
  */
 JNIEXPORT jboolean JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_veritySession
   (JNIEnv *, jobject, jbyteArray, jbyteArray);
+
+/*
+ * Class:     com_iyich_wallet_lib_jni_FastModeJNI
+ * Method:    sendData
+ * Signature: ([BI)Z
+ */
+JNIEXPORT jboolean JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_sendData
+        (JNIEnv *, jobject, jbyteArray, jint);
+
+/*
+ * Class:     com_iyich_wallet_lib_jni_FastModeJNI
+ * Method:    onReceive
+ * Signature: ([BI)Z
+ */
+JNIEXPORT jboolean JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_onReceive
+        (JNIEnv *, jobject, jbyteArray, jint);
+
 
 #ifdef __cplusplus
 }
