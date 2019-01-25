@@ -1,11 +1,10 @@
 package com.iyich.wallet.lib.jni;
 
-import android.util.Log;
-
-import com.iyich.wallet.lib.Convert;
-import com.iyich.wallet.lib.FastModeCallback;
+import Format.FastModeCallback;
 
 public class SecLinkJni {
+
+
 
     FastModeCallback fastModeCallback;
 
@@ -18,17 +17,19 @@ public class SecLinkJni {
     }
 
 
-    public native byte[] veritySession(byte[] hPriKey, byte[] R, byte[] encryptedData, byte[] essionHash);
+    public static native String getRsaPrivateKey();
+    public static native String getDevicePublicKey();
+    public static native byte[] veritySession(byte[] hPriKey, byte[] R, byte[] encryptedData, byte[] essionHash);
 
-    /*** 蓝牙链接 */
-    public void SendBuff(byte[] data){
-        fastModeCallback.sendData(data);
-    }
-    public void RecieveBuff(byte[] data, int len){
-        fastModeCallback.revice(data, len);
-    }
-    public native boolean sendData(byte[] data, int length);
-    public native boolean onReceive(byte[] data, int length);
+//    /*** 蓝牙链接 */
+//    public void SendBuff(byte[] data){
+//        fastModeCallback.sendData(data);
+//    }
+//    public void RecieveBuff(byte[] data, int len){
+//        fastModeCallback.revice(data, len);
+//    }
+//    public native boolean sendData(byte[] data, int length);
+//    public native boolean onReceive(byte[] data, int length);
 
     /** sha3  */
 

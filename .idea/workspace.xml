@@ -6,8 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="kxyu_ble" />
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="CMakeSettings">
@@ -25,14 +24,46 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/android_gradle_build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/bleProtocol/fastmode.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/ecdsa.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/pbkdf2.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/secp256k1.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/address.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/aes/aes_modes.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/aes/aescrypt.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/aes/aeskey.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/aes/aestab.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/base58.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/bignum.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/bip32.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/blake256.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/blake2b.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/curves.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/curve25519-donna-32bit.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/curve25519-donna-helpers.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/curve25519-donna-scalarmult-base.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519-donna-32bit-tables.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519-donna-basepoint-table.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519-donna-impl-base.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519-keccak.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519-sha3.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/modm-donna-32bit.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/hasher.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/hmac.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/memzero.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/nist256p1.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/rand.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ripemd160.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/sha2.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/sha3.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/seclink.c.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/bleProtocol/fastmode.c.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/ecdsa.c.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/pbkdf2.c.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/secp256k1.c.o" beforeDir="false" />
@@ -66,10 +97,9 @@
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/sha2.c.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/sha3.c.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/seclink.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/android_gradle_build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/bleProtocol/fastmode.c.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/ecdsa.c.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/pbkdf2.c.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/secp256k1.c.o" beforeDir="false" />
@@ -103,25 +133,12 @@
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/sha2.c.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/sha3.c.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/seclink.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/android_gradle_build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release/arm64-v8a/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release/arm64-v8a/android_gradle_build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release/arm64-v8a/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release/arm64-v8a/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release/armeabi-v7a/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release/armeabi-v7a/android_gradle_build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release/armeabi-v7a/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release/armeabi-v7a/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release/x86_64/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release/x86_64/android_gradle_build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release/x86_64/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release/x86_64/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/cpp/com_iyich_wallet_lib_jni_SecLinkJni.h" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/cpp/com_iyich_wallet_lib_jni_SecLinkJni.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/cpp/fastmode.c" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/cpp/bleProtocol/fastmode.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/cpp/fastmode.h" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/cpp/bleProtocol/fastmode.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/cpp/seclink.c" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/cpp/seclink.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/FastModeCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/FastModeCallback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/FastModeCallback.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/jni/FastModeJNI.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/jni/FastModeJNI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/jni/GwJniHelp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/jni/GwJniHelp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/jni/SecLinkJni.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/jni/SecLinkJni.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -145,11 +162,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="seclink.c" pinned="false" current-in-tab="true">
+      <file leaf-file-name="seclink.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/cpp/seclink.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="-2253">
+              <caret line="18" column="84" selection-start-line="18" selection-start-column="84" selection-end-line="18" selection-end-column="84" />
               <folding>
                 <element signature="e#1#17#0" expanded="true" />
               </folding>
@@ -157,85 +174,63 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="FastMode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/Format/FastMode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseFastmode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/Format/BaseFastmode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="FastModeCallback.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/FastModeCallback.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/Format/FastModeCallback.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            <state relative-caret-position="90">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/test.java">
+      <file leaf-file-name="PackageType.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/Format/PackageType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SecLinkJni.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/jni/SecLinkJni.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#553#554#0" expanded="true" />
-                <element signature="e#600#601#0" expanded="true" />
-                <element signature="e#652#653#0" expanded="true" />
-                <element signature="e#702#703#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <file leaf-file-name="FastModeJNI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/jni/FastModeJNI.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
               <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
-              <caret line="71" column="84" selection-start-line="71" selection-start-column="84" selection-end-line="71" selection-end-column="84" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#385#386#0" expanded="true" />
+                <element signature="e#432#433#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SecLinkJni.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/jni/SecLinkJni.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
         </entry>
@@ -243,12 +238,33 @@
       <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="44" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="44" />
+            <state relative-caret-position="41">
+              <caret line="9" column="38" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="38" />
             </state>
           </provider>
           <provider editor-type-id="android-designer2">
             <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GwJniHelp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/jni/GwJniHelp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="327">
+              <caret line="90" column="49" selection-start-line="90" selection-start-column="49" selection-end-line="90" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -2601,12 +2617,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/cpp/fastmode.c" />
-        <option value="$PROJECT_DIR$/app/src/main/cpp/sec/sing/ed25519-donna/ed25519-donna-impl-base.h" />
-        <option value="$PROJECT_DIR$/app/src/main/cpp/sec/sing/ed25519-donna/modm-donna-32bit.h" />
-        <option value="$PROJECT_DIR$/app/src/main/cpp/sec/sing/ed25519-donna/curve25519-donna-scalarmult-base.h" />
-        <option value="$PROJECT_DIR$/app/src/main/cpp/sec/sing/ed25519-donna/curve25519-donna-helpers.h" />
-        <option value="$PROJECT_DIR$/app/src/main/cpp/sec/sing/ed25519-donna/curve25519-donna-32bit.h" />
         <option value="$PROJECT_DIR$/app/src/main/test" />
         <option value="$PROJECT_DIR$/app/src/main/cpp/sec/pbkdf2.h" />
         <option value="$PROJECT_DIR$/app/src/main/cpp/sec/ecdsa.h" />
@@ -2637,7 +2647,6 @@
         <option value="$PROJECT_DIR$/app/src/main/cpp/sec/sing/hmac.h" />
         <option value="$PROJECT_DIR$/app/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.h" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/jni/GwJniHelp.java" />
         <option value="$PROJECT_DIR$/app/src/main/cpp/sec/sing/sha2.c" />
         <option value="$PROJECT_DIR$/app/src/main/cpp/bleProtocols/fastmode.h" />
         <option value="$PROJECT_DIR$/app/src/main/cpp/sec/pbkdf2.c" />
@@ -2645,12 +2654,20 @@
         <option value="$PROJECT_DIR$/app/src/main/cpp/sec/sha256.c" />
         <option value="$PROJECT_DIR$/app/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/app/src/main/cpp/com_iyich_wallet_lib_jni_SecLinkJni.h" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/jni/SecLinkJni.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/FastModeCallback.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/test.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/FastMode.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/Format/BaseFastmode.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/Format/FastModeCallback.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/Format/PackageType.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/Format/PackData.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/jni/FastModeJNI.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/jni/GwJniHelp.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/cpp/seclink.c" />
+        <option value="$PROJECT_DIR$/app/src/main/java/Format/FastMode.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/jni/SecLinkJni.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -2762,6 +2779,15 @@
               <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Format" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JniLibWallet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JniLibWallet" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="res" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -2788,7 +2814,7 @@
     <property name="DEBUGGER_ID" value="Auto" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="device.picker.selection" value="6PCBB18302231214" />
+    <property name="device.picker.selection" value="71UBBL6255US" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
@@ -2893,7 +2919,7 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.iyich.wallet.lib.*" />
+          <option name="PATTERN" value="Format.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -2960,7 +2986,7 @@
     <frame x="0" y="0" width="2048" height="1152" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="Android Profiler" order="7" weight="1.0" />
+      <window_info anchor="bottom" id="Android Profiler" order="7" weight="0.6694522" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32961932" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
@@ -2970,13 +2996,13 @@
       <window_info anchor="right" id="Preview" order="4" weight="0.32951146" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32961932" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32961932" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32961932" />
-      <window_info active="true" anchor="bottom" id="Logcat" order="7" visible="true" weight="0.22655524" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.6694522" />
+      <window_info anchor="bottom" id="Logcat" order="7" weight="0.64809656" />
       <window_info id="Captures" order="2" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24975075" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.2525534" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24975075" />
+      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.2525534" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" />
@@ -2992,14 +3018,14 @@
       <window_info anchor="bottom" id="Find" order="1" weight="0.32961932" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Build" order="7" weight="0.17827298" />
+      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.2525534" />
       <window_info id="Designer" order="2" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32961932" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Android Profiler" order="8" weight="1.0" />
+      <window_info anchor="bottom" id="Android Profiler" order="8" weight="0.6694522" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Captures" order="6" weight="0.25" />
       <window_info id="Capture Tool" order="7" />
@@ -3010,11 +3036,11 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32961932" />
       <window_info anchor="right" id="Device File Explorer" order="4" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Logcat" order="10" visible="true" weight="0.41968432" />
+      <window_info anchor="bottom" id="Logcat" order="10" weight="0.64809656" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32961932" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32961932" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.6694522" />
       <window_info anchor="right" id="Gradle" order="5" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24975075" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24975075" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32961932" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
@@ -3029,10 +3055,22 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/app/src/main/cpp/seclink.c</url>
+          <line>53</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/app/src/main/cpp/seclink.c</url>
+          <line>96</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="56" />
+      <option name="time" value="65" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="AndroidRunConfigurationType">
@@ -3102,33 +3140,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/cpp/sec/sing/ripemd160.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/cpp/sec/sing/rfc6979.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/cpp/sec/sing/rand.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/cpp/sec/sing/rand.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/cpp/sec/sing/options.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/cpp/sec/sing/nist256p1.table">
       <provider selected="true" editor-type-id="text-editor">
         <state />
@@ -3246,6 +3257,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="807" column="21" selection-start-line="807" selection-start-column="5" selection-end-line="807" selection-end-column="21" />
+          <folding>
+            <element signature="e#1610#1629#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3283,24 +3297,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="40" column="28" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="28" />
+          <folding>
+            <element signature="e#1649#1668#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/cpp/sec/sing/sha3.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4320" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/jni/GwJniHelp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/cpp/bleProtocol/fastmode.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.h">
@@ -3317,24 +3322,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1770">
-          <caret line="118" column="1" selection-start-line="15" selection-end-line="118" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/jni/FastModeJNI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-          <folding>
-            <element signature="e#385#386#0" expanded="true" />
-            <element signature="e#432#433#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state />
@@ -3345,16 +3332,6 @@
         <state relative-caret-position="15">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="44" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="44" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
@@ -3371,13 +3348,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/FastModeCallback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -3388,37 +3358,117 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="71" column="84" selection-start-line="71" selection-start-column="84" selection-end-line="71" selection-end-column="84" />
+        <state relative-caret-position="208">
+          <caret line="75" column="47" selection-start-line="75" selection-start-column="27" selection-end-line="75" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/cpp/bleProtocol/fastmode.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="225" column="5" selection-start-line="225" selection-start-column="5" selection-end-line="225" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/Format/PackData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/FastModeCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/Format/BaseFastmode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/Format/FastModeCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/jni/GwJniHelp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="38" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/Format/PackageType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/Format/FastMode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/jni/SecLinkJni.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/jni/FastModeJNI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="e#385#386#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="90" column="49" selection-start-line="90" selection-start-column="49" selection-end-line="90" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-            <element signature="e#652#653#0" expanded="true" />
-            <element signature="e#702#703#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/cpp/seclink.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="-2253">
+          <caret line="18" column="84" selection-start-line="18" selection-start-column="84" selection-end-line="18" selection-end-column="84" />
           <folding>
             <element signature="e#1#17#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/jni/SecLinkJni.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>

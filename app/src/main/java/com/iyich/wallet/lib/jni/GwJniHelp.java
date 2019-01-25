@@ -1,6 +1,7 @@
 package com.iyich.wallet.lib.jni;
 
-import com.iyich.wallet.lib.FastModeCallback;
+
+import Format.FastModeCallback;
 
 public class GwJniHelp {
     static {

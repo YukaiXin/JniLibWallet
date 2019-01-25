@@ -15,108 +15,122 @@
 #define LOGD(...) __android_log_print(ANDROID_LOG_DEBUG, LOG_TAG, __VA_ARGS__)
 #define LOGI(...) __android_log_print(ANDROID_LOG_INFO, LOG_TAG, __VA_ARGS__)
 
-/* Header for class com_iyich_wallet_lib_jni_FastModeJNI */
-JavaVM *jvm;
-//JNIEnv *_env;
-jobject gobal_obj;
+char *APK_SIGN = "";
+char *SERVER_KEY = "MIICdQIBADANBgkqhkiG9w0BAQEFAASCAl8wggJbAgEAAoGBAJOW1A7cat7vRIXu\nGXVjul5MzftF8o9vNmoc3QhkqvC4WzJ0H8LyT7iDVdjGWgsiGez2zntm/UlsWjC4\nHWB2Hr43EXMxzxhD82ktRoxWcpJrdVxa3xA8BVxwo6vw038Mi11+KvJvggDSb+7U\n9H+PGTkG5StFhqArEFeWXu2IWNxDAgMBAAECgYBydTFFySjUdYiVuT5jLJFXGodQ\nDEH9fMkdZ/7+yFtNThvjt+z92b97n9cOw10Hb03d2NXvG8LokzAqwk5+BXz254OX\nQxHlRFhZ0f8A9Htzbz9Qrd30JCGeXS06UfjljabYMfkh7HR07IPKadDDRbQZ3Y4P\n0h7rCgflCh36lz8KGQJBAMzfObp853qEybDXULGe1pKzFtlxdZAlnelbwzqRxdNz\nOSXhacImQ2wkvWNc9dJy+aWNdgQhp4uVaHsBAkukEQcCQQC4a/F+5AWhKgJ22sF4\nu2qEfjF5EuPFd7hJ7G0vq37fd0Jn7NXhM3+KqqM2xniqHzDHsASYe8wtfZu2BkdJ\nAhflAkBJFkmt8elSmBSr9eRfuV6rLyCzqfpa1lCjc40OU/rTGIQGs4fbL3NWHTVD\nQWKhFUtieDjl+GuhLEf9ubpr6bf5AkBWVAEp2udft+CLbn9eWqzT9JaIDHWevBoC\nULATvn2XcaYeK9k6n/a2HIZmX6WgTRVyhEzCbED5knDPVkUMQfSZAkBQYcujE8Mc\n7WIrP0LQaxUjkTcmwXIdR/iWb+KdVL21PKTk8nfdue1TkZfCkqsP9lnBoZx9REmD\nQ+/7FeKFzccV";
+char *DEVICE_PUBLIC_KEY = "0220b4c720870cc6f5e4d416417fdf91d43e08c19ccc1321552f41a97983b00216";
 
-void callBackRecvBuff(JNIEnv* _env, int pos, unsigned char *data, int len){
-    jbyteArray dataArray =  (*_env) -> NewByteArray(_env, len);
-    (*_env) -> SetByteArrayRegion(_env, dataArray, 0, len, (jbyte *)data);
-    jbyte * jbyteP = (*_env) -> GetByteArrayElements(_env, dataArray, 0);
-    jclass fastClass = (*_env) -> GetObjectClass(_env, gobal_obj);
-
-    jmethodID jmethodID1 = (*_env) -> GetMethodID(_env, fastClass, "RecieveBuff", "([BI)V");
-    (*_env)->CallVoidMethod(_env, gobal_obj, jmethodID1, dataArray, len);
-
-    (*_env) ->ReleaseByteArrayElements(_env, dataArray, jbyteP,  JNI_ABORT);
-}
-
-bool receiveBuff(int pos,unsigned char *data, int len){
-
-    JNIEnv* _env;
-    int envStatus = (*jvm)->GetEnv(jvm, (void**)&_env, JNI_VERSION_1_6);
-    if(envStatus == JNI_EDETACHED){
+///* Header for class com_iyich_wallet_lib_jni_FastModeJNI */
+//JavaVM *jvm;
+//jobject gobal_obj;
+//
+//void callBackRecvBuff(JNIEnv* _env, int pos, unsigned char *data, int len){
+//    jbyteArray dataArray =  (*_env) -> NewByteArray(_env, len);
+//    (*_env) -> SetByteArrayRegion(_env, dataArray, 0, len, (jbyte *)data);
+//    jbyte * jbyteP = (*_env) -> GetByteArrayElements(_env, dataArray, 0);
+//    jclass fastClass = (*_env) -> GetObjectClass(_env, gobal_obj);
+//
+//    jmethodID jmethodID1 = (*_env) -> GetMethodID(_env, fastClass, "RecieveBuff", "([BI)V");
+//
+//    (*_env)->CallVoidMethod(_env, gobal_obj, jmethodID1, dataArray, len);
+//    (*_env) ->ReleaseByteArrayElements(_env, dataArray, jbyteP,  JNI_ABORT);
+//}
+//
+//bool receiveBuff(int pos,unsigned char *data, int len){
+//
+//    JNIEnv* _env;
+//    int envStatus = (*jvm)->GetEnv(jvm, (void**)&_env, JNI_VERSION_1_6);
+//    if(envStatus == JNI_EDETACHED){
 //        LOGI("============== GetEnv: not attached  ");
-        if ((*jvm)->AttachCurrentThread(jvm, &_env, NULL) != 0) {
+//        if ((*jvm)->AttachCurrentThread(jvm, &_env, NULL) != 0) {
 //            LOGI(" ================================== Attach fail ! !!!  ");
-            return false;
-        }
-        callBackRecvBuff(_env, pos, data, len);
-    } else if(envStatus == JNI_OK){
-        callBackRecvBuff(_env, pos, data, len);
-    } else if(envStatus == JNI_EVERSION){
-        return false;
-    }
-
-    return true;
-}
-
-void callBackSendBuff(JNIEnv *_env,unsigned char*data, int len){
-    jbyteArray dataArray =  (*_env) -> NewByteArray(_env, len);
-    (*_env) -> SetByteArrayRegion(_env, dataArray, 0, len, (const jbyte *)(data));
-    jbyte * jbyteP = (*_env) -> GetByteArrayElements(_env, dataArray, 0);
-
-    jclass fastClass = (*_env) -> GetObjectClass(_env, gobal_obj);
-    jmethodID jmethodID1 = (*_env) -> GetMethodID(_env, fastClass, "SendBuff", "([B)V");
-    (*_env)->CallVoidMethod(gobal_obj, jmethodID1, dataArray);
-
-    (*_env) ->ReleaseByteArrayElements(_env, dataArray, jbyteP,  JNI_ABORT);
-
-}
-
-bool sendBuff(unsigned char*data, int len){
-
-    JNIEnv* _env;
-    int envStatus = (*jvm)->GetEnv(jvm,(void **)&_env, JNI_VERSION_1_6);
-    if(envStatus == JNI_EDETACHED){
+//            return false;
+//        }
+//
+//        LOGI("============== 回叫 接受 buffer  ");
+//        callBackRecvBuff(_env, pos, data, len);
+//    } else if(envStatus == JNI_OK){
+//        callBackRecvBuff(_env, pos, data, len);
+//    } else if(envStatus == JNI_EVERSION){
+//        return false;
+//    }
+//
+//    return true;
+//}
+//
+//void callBackSendBuff(JNIEnv *_env,unsigned char*data, int len){
+//
+//    LOGI("==============callBackSendBuff  111");
+//    jbyteArray dataArray =  (*_env) -> NewByteArray(_env, len);
+//    LOGI("==============callBackSendBuff  222");
+//    (*_env) -> SetByteArrayRegion(_env, dataArray, 0, len, (const jbyte *)(data));
+//    LOGI("==============callBackSendBuff  333");
+//    jbyte * jbyteP = (*_env) -> GetByteArrayElements(_env, dataArray, 0);
+//
+//    LOGI("==============callBackSendBuff  444");
+//    jclass fastClass = (*_env) -> GetObjectClass(_env, gobal_obj);
+//    LOGI("==============callBackSendBuff  555");
+//    jmethodID jmethodID1 = (*_env) -> GetMethodID(_env, fastClass, "SendBuff", "([B)V");
+//    LOGI("==============callBackSendBuff  666");
+//    (*_env)->CallVoidMethod(gobal_obj, jmethodID1, dataArray);
+//    LOGI("==============callBackSendBuff  777");
+//    (*_env) ->ReleaseByteArrayElements(_env, dataArray, jbyteP,  JNI_ABORT);
+//    LOGI("==============callBackSendBuff  888");
+//
+//}
+//
+//bool sendBuff(unsigned char*data, int len){
+//
+//    JNIEnv* _env;
+//    int envStatus = (*jvm)->GetEnv(jvm,(void **)&_env, JNI_VERSION_1_6);
+//    if(envStatus == JNI_EDETACHED){
 //        LOGI(" ==============GetEnv: not attached  ");
-        if ((*jvm)->AttachCurrentThread(jvm, &_env, NULL) != 0) {
+//        if ((*jvm)->AttachCurrentThread(jvm, &_env, NULL) != 0) {
 //            LOGI(" ================================== Attach fail ! !!!  ");
-            return false;
-        }
-
-        callBackSendBuff(_env, data, len);
-    } else if(envStatus == JNI_OK){
-//        LOGI(" ============= JNI_OK 111 !!!  ");
-        callBackSendBuff(_env, data, len);
-    } else if(envStatus == JNI_EVERSION){
+//            return false;
+//        }
+//
+//        callBackSendBuff(_env, data, len);
+//    } else if(envStatus == JNI_OK){
+//        LOGI("============== 发送 buffer  ");
+//        callBackSendBuff(_env, data, len);
+//    } else if(envStatus == JNI_EVERSION){
 //        LOGI(" ==================================   JNI Version not support !!!   ");
-        return false;
-    }
+//        return false;
+//    }
+//
+//    return true;
+//}
+//
+//
+///*
+// * Class:     com_iyich_wallet_lib_jni_FastModeJNI
+// * Method:    sendData
+// * Signature: ([BI)Z
+// */
+//JNIEXPORT jboolean JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_sendData
+//        (JNIEnv *env, jobject jobj, jbyteArray data, jint len){
+//
+//    (*env) -> GetJavaVM(env, &jvm);
+//    gobal_obj = (*env) -> NewGlobalRef(env, jobj);
+//
+//    unsigned char* buffer = (unsigned char *)((*env)->GetByteArrayElements(env, data, 0));
+//    return onSendBlock(buffer, len, sendBuff);
+//}
+//
+//
+//
+///*
+// * Class:     com_iyich_wallet_lib_jni_FastModeJNI
+// * Method:    onReceive
+// * Signature: ([BI)Z
+// */
+//JNIEXPORT jboolean JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_onReceive
+//        (JNIEnv *env, jobject jobj, jbyteArray data, jint len){
+//    gobal_obj = (*env) -> NewGlobalRef(env, jobj);
+//    unsigned char* buffer = (unsigned char *)((*env)->GetByteArrayElements(env, data, 0));
+//    return onMRecieve(buffer, len, sendBuff, receiveBuff);
+//}
 
-    return true;
-}
-
-
-/*
- * Class:     com_iyich_wallet_lib_jni_FastModeJNI
- * Method:    sendData
- * Signature: ([BI)Z
- */
-JNIEXPORT jboolean JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_sendData
-        (JNIEnv *env, jobject jobj, jbyteArray data, jint len){
-
-    (*env) -> GetJavaVM(env, &jvm);
-    gobal_obj = (*env) -> NewGlobalRef(env, jobj);
-
-    unsigned char* buffer = (unsigned char *)((*env)->GetByteArrayElements(env, data, 0));
-    return onSendBlock(buffer, len, sendBuff);
-}
-
-
-
-/*
- * Class:     com_iyich_wallet_lib_jni_FastModeJNI
- * Method:    onReceive
- * Signature: ([BI)Z
- */
-JNIEXPORT jboolean JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_onReceive
-        (JNIEnv *env, jobject jobj, jbyteArray data, jint len){
-    gobal_obj = (*env) -> NewGlobalRef(env, jobj);
-    unsigned char* buffer = (unsigned char *)((*env)->GetByteArrayElements(env, data, 0));
-    return onMRecieve(buffer, len, sendBuff, receiveBuff);
-}
 
 
 int len(char const *p)
@@ -168,5 +182,17 @@ JNIEXPORT jbyteArray JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_veritySess
     } else{
         return NULL;
     }
+
+
 };
+
+JNIEXPORT jstring JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_getRsaPrivateKey(JNIEnv *env, jobject jobj){
+
+    return  (*env) -> NewStringUTF(env, SERVER_KEY);
+}
+
+JNIEXPORT jstring JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_getDevicePublicKey(JNIEnv *env, jobject jobj){
+
+    return  (*env) -> NewStringUTF(env, DEVICE_PUBLIC_KEY);
+}
 
