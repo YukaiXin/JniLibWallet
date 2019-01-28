@@ -13,16 +13,14 @@ import com.iyich.wallet.lib.jni.FastModeJNI;
 import com.iyich.wallet.lib.jni.SecLinkJni;
 
 import java.security.SecureRandom;
+import java.util.HashMap;
 import java.util.Random;
 
 import Format.FastModeCallback;
 
 public class MainActivity extends AppCompatActivity implements FastModeCallback {
     private SecLinkJni secLinkJni;
-    private  TextView tvSec;
-    private  TextView tvBle;
-    private  TextView tvServerKey;
-    private  TextView tvDeviceKey;
+    private  TextView tvSec, tvBle, tvServerKey, tvDeviceKey, tvGetModelKey;
 
     private String aesKey = "ab46a794d099ed090321d8878dc873228539796d6b84b777ba193fb3dceb561d";
     private String pubKeyString = "04f0a5e28e9d01dd893f3c824b637363db06a2745855ace9b879b512f661f0e593974c8e783c8b4a5e04b5d74dd8e58994528bc072c19b94ded6ad5ded097e46c5";
@@ -43,6 +41,31 @@ public class MainActivity extends AppCompatActivity implements FastModeCallback 
             "TsRL3IIdSdODeqvjPXdK5IbQvNkhF0+vy+YiImc050KRE6ekqrml6PQ1f4Hznt2GXlVsc8hfAkAR\n" +
             "DO06vvqdIt1osz7PFFX9Ms7J5Q2U8Bt2v9i0xPmahi25MKb+Nyv/Fdd2syt+b2YP+eAkO6OyUXqe\n" +
             "dGz65rwC";
+
+    public static HashMap<Integer, String> pubkMapDebug = new HashMap<>();
+
+    public static HashMap<Integer, String> pubkMapModel = new HashMap<>();
+
+    static {
+        pubkMapDebug.put(1, "02b0f062e9344770b0acdfeabafb3d870ed202fe2e8416fd9d840a6440964446e4");
+        pubkMapDebug.put(2, "023f110f9d41878dd11eb59c06305f351c7d6ce416c6f98c484bfee1a5f32b3e69");
+        pubkMapDebug.put(3, "026f84b7f28b2e642175f8f27178f89e36c419d9180d1c7c87dd7a39cd51c1c074");
+        pubkMapDebug.put(4, "0278ae6205afdcd635d2cce74ebd66c02d901d29163fa162ac2b54e389481761f2");
+        pubkMapDebug.put(5, "0288e098ba998835bcd39a48fe33f1ba6c568811cf0629e93ecc252a150e395225");
+        pubkMapDebug.put(6, "023f0c51ea52c7fc344a34767186b7cccf0eec99fae7de579f65b397c7f1daa0dc");
+    }
+
+
+    static {
+        pubkMapModel.put(1, "036f3dc1195204f9ef94f39b3c8f0a9f82cde6e24324132fab9604beb78c744e43");
+        pubkMapModel.put(2, "024e9c342b05f40b7fee06d21010c37ec36a599d6941394d20c63d20fb22fa282f");
+        pubkMapModel.put(3, "0293466e61ecc3398de8038399157e45775b93881836fc4cc51d1cc0f34651559e");
+        pubkMapModel.put(4, "035f7fc950ede95b0c365a44d7be0cffd96c1600da147dacc87320e33308c24564");
+        pubkMapModel.put(5, "02600744be5ad4cc0864b4da8c1a92870ec4e09f1bbf2f45d31a056de6fdadbe1a");
+        pubkMapModel.put(6, "0247f59687e6453957b0b7b2881c4dcf2999fbf69470b8e225e6ddf1bd81b84e4a");
+    }
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,11 +75,14 @@ public class MainActivity extends AppCompatActivity implements FastModeCallback 
         tvBle = findViewById(R.id.tv_ble);
         tvDeviceKey = findViewById(R.id.tv_device_key);
         tvServerKey = findViewById(R.id.tv_server_key);
+        tvGetModelKey = findViewById(R.id.tv_model_key);
 
+        tvGetModelKey.setOnClickListener(onClickListener);
         tvServerKey.setOnClickListener(onClickListener);
         tvDeviceKey.setOnClickListener(onClickListener);
         tvBle.setOnClickListener(onClickListener);
         tvSec.setOnClickListener(onClickListener);
+
 
     }
 
@@ -94,6 +120,21 @@ public class MainActivity extends AppCompatActivity implements FastModeCallback 
 
                     Log.i("kxyu_jni"," local  serverKey size :  "+PRIVATE_KEY.length());
 
+                    break;
+                case R.id.tv_model_key:
+                    String[] modelKeys =  SecLinkJni.getModelKey();
+                    int eqCount = 0;
+
+                    for (int i = 0; i < 6; i ++){
+                        if(modelKeys[i].equals(pubkMapModel.get(i + 1))){
+                            eqCount += 1;
+                        }
+                    }
+                    if(eqCount == 6){
+                        Log.i("kxyu_jni", " Model keys 相等   ！！！！！ ");
+                    }else {
+                        Log.i("kxyu_jni", " Model keys 不相等 ！！！！！ ");
+                    }
                     break;
             }
         }

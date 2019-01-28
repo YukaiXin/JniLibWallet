@@ -14,10 +14,16 @@
 #define LOG_TAG "System.out"
 #define LOGD(...) __android_log_print(ANDROID_LOG_DEBUG, LOG_TAG, __VA_ARGS__)
 #define LOGI(...) __android_log_print(ANDROID_LOG_INFO, LOG_TAG, __VA_ARGS__)
+#define ARRAY_LENGTH 6
 
 char *APK_SIGN = "";
 char *SERVER_KEY = "MIICdQIBADANBgkqhkiG9w0BAQEFAASCAl8wggJbAgEAAoGBAJOW1A7cat7vRIXu\nGXVjul5MzftF8o9vNmoc3QhkqvC4WzJ0H8LyT7iDVdjGWgsiGez2zntm/UlsWjC4\nHWB2Hr43EXMxzxhD82ktRoxWcpJrdVxa3xA8BVxwo6vw038Mi11+KvJvggDSb+7U\n9H+PGTkG5StFhqArEFeWXu2IWNxDAgMBAAECgYBydTFFySjUdYiVuT5jLJFXGodQ\nDEH9fMkdZ/7+yFtNThvjt+z92b97n9cOw10Hb03d2NXvG8LokzAqwk5+BXz254OX\nQxHlRFhZ0f8A9Htzbz9Qrd30JCGeXS06UfjljabYMfkh7HR07IPKadDDRbQZ3Y4P\n0h7rCgflCh36lz8KGQJBAMzfObp853qEybDXULGe1pKzFtlxdZAlnelbwzqRxdNz\nOSXhacImQ2wkvWNc9dJy+aWNdgQhp4uVaHsBAkukEQcCQQC4a/F+5AWhKgJ22sF4\nu2qEfjF5EuPFd7hJ7G0vq37fd0Jn7NXhM3+KqqM2xniqHzDHsASYe8wtfZu2BkdJ\nAhflAkBJFkmt8elSmBSr9eRfuV6rLyCzqfpa1lCjc40OU/rTGIQGs4fbL3NWHTVD\nQWKhFUtieDjl+GuhLEf9ubpr6bf5AkBWVAEp2udft+CLbn9eWqzT9JaIDHWevBoC\nULATvn2XcaYeK9k6n/a2HIZmX6WgTRVyhEzCbED5knDPVkUMQfSZAkBQYcujE8Mc\n7WIrP0LQaxUjkTcmwXIdR/iWb+KdVL21PKTk8nfdue1TkZfCkqsP9lnBoZx9REmD\nQ+/7FeKFzccV";
 char *DEVICE_PUBLIC_KEY = "0220b4c720870cc6f5e4d416417fdf91d43e08c19ccc1321552f41a97983b00216";
+char *KEY_MODEL_ARRAYS[] = {"036f3dc1195204f9ef94f39b3c8f0a9f82cde6e24324132fab9604beb78c744e43", "024e9c342b05f40b7fee06d21010c37ec36a599d6941394d20c63d20fb22fa282f",
+                            "0293466e61ecc3398de8038399157e45775b93881836fc4cc51d1cc0f34651559e", "035f7fc950ede95b0c365a44d7be0cffd96c1600da147dacc87320e33308c24564",
+                            "02600744be5ad4cc0864b4da8c1a92870ec4e09f1bbf2f45d31a056de6fdadbe1a", "0247f59687e6453957b0b7b2881c4dcf2999fbf69470b8e225e6ddf1bd81b84e4a"};
+
+
 
 ///* Header for class com_iyich_wallet_lib_jni_FastModeJNI */
 //JavaVM *jvm;
@@ -145,7 +151,7 @@ int len(char const *p)
  * Method:    veritySession
  */
 JNIEXPORT jbyteArray JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_veritySession
-        (JNIEnv *env, jobject jobj, jbyteArray hPrivateKey, jbyteArray R, jbyteArray encryptedData, jbyteArray essionHash){
+        (JNIEnv *env, jclass class, jbyteArray hPrivateKey, jbyteArray R, jbyteArray encryptedData, jbyteArray essionHash){
 
     char const * salt = "EDCH key salt9759";
     uint8_t S[65];
@@ -186,13 +192,25 @@ JNIEXPORT jbyteArray JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_veritySess
 
 };
 
-JNIEXPORT jstring JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_getRsaPrivateKey(JNIEnv *env, jobject jobj){
+JNIEXPORT jstring JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_getRsaPrivateKey(JNIEnv *env, jclass class){
 
     return  (*env) -> NewStringUTF(env, SERVER_KEY);
 }
 
-JNIEXPORT jstring JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_getDevicePublicKey(JNIEnv *env, jobject jobj){
+JNIEXPORT jstring JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_getDevicePublicKey(JNIEnv *env, jclass class){
 
     return  (*env) -> NewStringUTF(env, DEVICE_PUBLIC_KEY);
 }
 
+JNIEXPORT jobjectArray JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_getModelKey(JNIEnv *env, jclass class){
+
+    jclass objClass = (*env)->FindClass(env, "java/lang/String");
+    jobjectArray modelKeys= (*env)->NewObjectArray(env, (jsize)ARRAY_LENGTH, objClass, 0);
+    jstring jstr;
+    for (int i = 0; i < ARRAY_LENGTH; i ++) {
+        jstr = (*env) ->NewStringUTF(env, KEY_MODEL_ARRAYS[i]);
+        (*env) -> SetObjectArrayElement(env, modelKeys, i, jstr);
+    }
+
+    return modelKeys;
+}

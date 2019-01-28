@@ -27,117 +27,14 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/bleProtocol/fastmode.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/ecdsa.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/pbkdf2.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/secp256k1.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/address.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/aes/aes_modes.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/aes/aescrypt.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/aes/aeskey.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/aes/aestab.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/base58.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/bignum.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/bip32.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/blake256.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/blake2b.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/curves.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/curve25519-donna-32bit.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/curve25519-donna-helpers.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/curve25519-donna-scalarmult-base.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519-donna-32bit-tables.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519-donna-basepoint-table.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519-donna-impl-base.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519-keccak.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519-sha3.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/modm-donna-32bit.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/hasher.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/hmac.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/memzero.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/nist256p1.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/rand.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ripemd160.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/sha2.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/sha3.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/seclink.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/seclink.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/secLinkJni.dir/src/main/cpp/seclink.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/bleProtocol/fastmode.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/ecdsa.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/pbkdf2.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/secp256k1.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/address.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/aes/aes_modes.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/aes/aescrypt.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/aes/aeskey.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/aes/aestab.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/base58.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/bignum.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/bip32.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/blake256.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/blake2b.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/curves.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/curve25519-donna-32bit.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/curve25519-donna-helpers.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/curve25519-donna-scalarmult-base.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519-donna-32bit-tables.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519-donna-basepoint-table.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519-donna-impl-base.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519-keccak.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519-sha3.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/modm-donna-32bit.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/hasher.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/hmac.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/memzero.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/nist256p1.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/rand.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ripemd160.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/sha2.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/sha3.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir/src/main/cpp/seclink.c.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/bleProtocol/fastmode.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/ecdsa.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/pbkdf2.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/secp256k1.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/address.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/aes/aes_modes.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/aes/aescrypt.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/aes/aeskey.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/aes/aestab.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/base58.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/bignum.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/bip32.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/blake256.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/blake2b.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/curves.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/curve25519-donna-32bit.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/curve25519-donna-helpers.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/curve25519-donna-scalarmult-base.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519-donna-32bit-tables.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519-donna-basepoint-table.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519-donna-impl-base.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519-keccak.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519-sha3.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/modm-donna-32bit.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/hasher.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/hmac.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/memzero.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/nist256p1.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/rand.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ripemd160.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/sha2.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/sha3.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/secLinkJni.dir/src/main/cpp/seclink.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/cpp/com_iyich_wallet_lib_jni_SecLinkJni.h" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/cpp/com_iyich_wallet_lib_jni_SecLinkJni.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/cpp/seclink.c" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/cpp/seclink.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/FastModeCallback.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/jni/FastModeJNI.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/jni/FastModeJNI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/jni/GwJniHelp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/jni/GwJniHelp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/jni/SecLinkJni.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/jni/SecLinkJni.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
@@ -162,11 +59,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="seclink.c" pinned="false" current-in-tab="false">
+      <file leaf-file-name="seclink.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/cpp/seclink.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2253">
-              <caret line="18" column="84" selection-start-line="18" selection-start-column="84" selection-end-line="18" selection-end-column="84" />
+            <state relative-caret-position="864">
+              <caret line="209" column="42" selection-start-line="209" selection-start-column="42" selection-end-line="209" selection-end-column="42" />
               <folding>
                 <element signature="e#1#17#0" expanded="true" />
               </folding>
@@ -182,24 +79,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseFastmode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/Format/BaseFastmode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FastModeCallback.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/Format/FastModeCallback.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -226,11 +105,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SecLinkJni.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SecLinkJni.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/jni/SecLinkJni.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="212">
+              <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SecLinkJni.class" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iyich/wallet/lib/jni/SecLinkJni.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="1" />
+              <folding>
+                <element signature="e#0#677#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="com_iyich_wallet_lib_jni_SecLinkJni.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/cpp/com_iyich_wallet_lib_jni_SecLinkJni.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="107">
+              <caret line="36" column="34" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -238,8 +138,8 @@
       <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
-              <caret line="9" column="38" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="38" />
+            <state relative-caret-position="716">
+              <caret line="68" column="37" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="37" />
             </state>
           </provider>
           <provider editor-type-id="android-designer2">
@@ -259,8 +159,8 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="90" column="49" selection-start-line="90" selection-start-column="49" selection-end-line="90" selection-end-column="49" />
+            <state relative-caret-position="110">
+              <caret line="124" column="60" selection-start-line="124" selection-start-column="60" selection-end-line="124" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -279,8 +179,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>generate_rfc6979</find>
-      <find>generate_k_rfc6979</find>
       <find>chacha20poly1305</find>
       <find>rfc7539</find>
       <find>poly1305</find>
@@ -308,7 +206,9 @@
       <find>LOGD</find>
       <find>essionHashP</find>
       <find>R</find>
+      <find>\\\n</find>
       <find>jbyteArray</find>
+      <find>Invalid descriptor: Ljava/lang/String.</find>
     </findStrings>
     <replaceStrings>
       <replace>src/main/cpp/sec/sing/ed25519-donna/</replace>
@@ -2663,11 +2563,11 @@
         <option value="$PROJECT_DIR$/app/src/main/java/Format/PackData.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/jni/FastModeJNI.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/jni/GwJniHelp.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/cpp/seclink.c" />
         <option value="$PROJECT_DIR$/app/src/main/java/Format/FastMode.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/jni/SecLinkJni.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/cpp/seclink.c" />
       </list>
     </option>
   </component>
@@ -2705,6 +2605,56 @@
               <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="build" type="462c0819:PsiDirectoryNode" />
               <item name="intermediates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JniLibWallet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JniLibWallet" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="intermediates" type="462c0819:PsiDirectoryNode" />
+              <item name="javac" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JniLibWallet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JniLibWallet" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="intermediates" type="462c0819:PsiDirectoryNode" />
+              <item name="javac" type="462c0819:PsiDirectoryNode" />
+              <item name="debug" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JniLibWallet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JniLibWallet" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="intermediates" type="462c0819:PsiDirectoryNode" />
+              <item name="javac" type="462c0819:PsiDirectoryNode" />
+              <item name="debug" type="462c0819:PsiDirectoryNode" />
+              <item name="compileDebugJavaWithJavac" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JniLibWallet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JniLibWallet" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="intermediates" type="462c0819:PsiDirectoryNode" />
+              <item name="javac" type="462c0819:PsiDirectoryNode" />
+              <item name="debug" type="462c0819:PsiDirectoryNode" />
+              <item name="compileDebugJavaWithJavac" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JniLibWallet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JniLibWallet" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="intermediates" type="462c0819:PsiDirectoryNode" />
+              <item name="javac" type="462c0819:PsiDirectoryNode" />
+              <item name="debug" type="462c0819:PsiDirectoryNode" />
+              <item name="compileDebugJavaWithJavac" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="android" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JniLibWallet" type="b2602c69:ProjectViewProjectNode" />
@@ -2814,17 +2764,17 @@
     <property name="DEBUGGER_ID" value="Auto" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="device.picker.selection" value="71UBBL6255US" />
+    <property name="device.picker.selection" value="RPG0218B23013993" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/cpp" />
+      <recent name="$PROJECT_DIR$/app" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/main/cpp/bleProtocols" />
-      <recent name="$PROJECT_DIR$/app/src/main/cpp" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/src/main/cpp" />
     </key>
   </component>
@@ -3001,8 +2951,9 @@
       <window_info id="Captures" order="2" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24975075" />
-      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.2525534" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24975075" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.2525534" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32961932" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" />
@@ -3015,10 +2966,9 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32961932" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.2525534" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.2525534" />
       <window_info id="Designer" order="2" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
@@ -3034,19 +2984,19 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="right" id="Preview" order="8" weight="0.32951146" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32961932" />
       <window_info anchor="right" id="Device File Explorer" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Logcat" order="10" weight="0.64809656" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32961932" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.6694522" />
       <window_info anchor="right" id="Gradle" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24975075" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24975075" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32961932" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32961932" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.43268338" />
     </layout-to-restore>
   </component>
@@ -3058,12 +3008,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/app/src/main/cpp/seclink.c</url>
-          <line>53</line>
+          <line>46</line>
           <option name="timeStamp" value="62" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/app/src/main/cpp/seclink.c</url>
-          <line>96</line>
+          <line>89</line>
           <option name="timeStamp" value="63" />
         </line-breakpoint>
       </breakpoints>
@@ -3140,11 +3090,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/cpp/sec/sing/nist256p1.table">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/cpp/sec/sing/nist256p1.h">
       <provider selected="true" editor-type-id="text-editor">
         <state />
@@ -3214,6 +3159,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
           <caret line="767" column="42" selection-start-line="767" selection-start-column="38" selection-end-line="767" selection-end-column="42" />
+          <folding>
+            <element signature="e#1210#1229#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3315,13 +3263,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/cpp/com_iyich_wallet_lib_jni_SecLinkJni.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state />
@@ -3407,30 +3348,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="9" column="38" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="38" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/Format/PackageType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/Format/FastMode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3445,30 +3366,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/Format/FastMode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="90" column="49" selection-start-line="90" selection-start-column="49" selection-end-line="90" selection-end-column="49" />
+        <state relative-caret-position="30">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/cpp/seclink.c">
+    <entry file="file://$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iyich/wallet/lib/jni/SecLinkJni.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2253">
-          <caret line="18" column="84" selection-start-line="18" selection-start-column="84" selection-end-line="18" selection-end-column="84" />
+        <state>
+          <caret selection-end-line="1" />
           <folding>
-            <element signature="e#1#17#0" expanded="true" />
+            <element signature="e#0#677#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="716">
+          <caret line="68" column="37" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="37" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="124" column="60" selection-start-line="124" selection-start-column="60" selection-end-line="124" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iyich/wallet/lib/jni/SecLinkJni.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="212">
+          <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/cpp/com_iyich_wallet_lib_jni_SecLinkJni.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="36" column="34" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/cpp/seclink.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="209" column="42" selection-start-line="209" selection-start-column="42" selection-end-line="209" selection-end-column="42" />
+          <folding>
+            <element signature="e#1#17#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

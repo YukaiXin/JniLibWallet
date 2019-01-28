@@ -9,28 +9,35 @@ extern "C" {
 #endif
 /*
  * Class:     com_iyich_wallet_lib_jni_SecLinkJni
+ * Method:    getRsaPrivateKey
+ * Signature: ()Ljava/lang/String;
+ */
+JNIEXPORT jstring JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_getRsaPrivateKey
+  (JNIEnv *, jclass);
+
+/*
+ * Class:     com_iyich_wallet_lib_jni_SecLinkJni
+ * Method:    getDevicePublicKey
+ * Signature: ()Ljava/lang/String;
+ */
+JNIEXPORT jstring JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_getDevicePublicKey
+  (JNIEnv *, jclass);
+
+/*
+ * Class:     com_iyich_wallet_lib_jni_SecLinkJni
  * Method:    veritySession
- * Signature: ([B[B)Z
+ * Signature: ([B[B[B[B)[B
  */
-JNIEXPORT jboolean JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_veritySession
-  (JNIEnv *, jobject, jbyteArray, jbyteArray);
+JNIEXPORT jbyteArray JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_veritySession
+  (JNIEnv *, jclass, jbyteArray, jbyteArray, jbyteArray, jbyteArray);
 
 /*
- * Class:     com_iyich_wallet_lib_jni_FastModeJNI
- * Method:    sendData
- * Signature: ([BI)Z
+ * Class:     com_iyich_wallet_lib_jni_SecLinkJni
+ * Method:    getModelKey
+ * Signature: ()[Ljava/lang/String;
  */
-JNIEXPORT jboolean JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_sendData
-        (JNIEnv *, jobject, jbyteArray, jint);
-
-/*
- * Class:     com_iyich_wallet_lib_jni_FastModeJNI
- * Method:    onReceive
- * Signature: ([BI)Z
- */
-JNIEXPORT jboolean JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_onReceive
-        (JNIEnv *, jobject, jbyteArray, jint);
-
+JNIEXPORT jobjectArray JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_getModelKey
+  (JNIEnv *, jclass);
 
 #ifdef __cplusplus
 }

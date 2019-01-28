@@ -33,5 +33,6 @@ public class SecLinkJni {
 
     /** sha3  */
 
-
+    /** model key */
+    public static native String[] getModelKey();
 }
