@@ -115,10 +115,15 @@ public class MainActivity extends AppCompatActivity implements FastModeCallback 
                 case R.id.tv_server_key:
 
                     String serverKey = SecLinkJni.getRsaPrivateKey();
-                    Toast.makeText(getBaseContext(), serverKey, Toast.LENGTH_SHORT).show();
-                    Log.i("kxyu_jni"," jni  serverKey size :  "+serverKey.length());
+//                    Toast.makeText(getBaseContext(), serverKey, Toast.LENGTH_SHORT).show();
+                    if(serverKey.equals(PRIVATE_KEY)){
+                        Log.i("kxyu_jni","  相等      ");
+                    }else {
+                        Log.i("kxyu_jni","  不想等    ");
+                    }
+                    Log.i("kxyu_jni"," jni  serverKey  "+serverKey +" 长度  ：  "+serverKey.length());
 
-                    Log.i("kxyu_jni"," local  serverKey size :  "+PRIVATE_KEY.length());
+                    Log.i("kxyu_jni"," local  serverKey  "+PRIVATE_KEY +" 长度  ：  "+PRIVATE_KEY.length());
 
                     break;
                 case R.id.tv_model_key:

@@ -1,5 +1,7 @@
 package com.iyich.wallet.lib.jni;
 
+import android.content.Context;
+
 import Format.FastModeCallback;
 
 public class SecLinkJni {
@@ -16,6 +18,7 @@ public class SecLinkJni {
         System.loadLibrary("secLinkJni");
     }
 
+    public static native boolean  initLib(Context context);
 
     public static native String getRsaPrivateKey();
     public static native String getDevicePublicKey();

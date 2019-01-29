@@ -104,3 +104,5 @@
 362	632	0	CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/aes/aescrypt.c.o	d3921cec2a704973
 394	1027	0	CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/aes/aestab.c.o	4c3c02e34b87176a
 1027	1098	0	../../../../build/intermediates/cmake/debug/obj/x86_64/libsecLinkJni.so	29669d9897b93ede
+1	173	0	CMakeFiles/secLinkJni.dir/src/main/cpp/seclink.c.o	45a9836413d44f0a
+173	227	0	../../../../build/intermediates/cmake/debug/obj/x86_64/libsecLinkJni.so	29669d9897b93ede
