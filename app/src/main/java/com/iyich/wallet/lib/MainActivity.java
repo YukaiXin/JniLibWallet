@@ -1,6 +1,11 @@
 package com.iyich.wallet.lib;
 
+import android.content.Context;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.Signature;
 import android.net.wifi.WifiManager;
+import android.os.Binder;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -82,8 +87,25 @@ public class MainActivity extends AppCompatActivity implements FastModeCallback 
         tvDeviceKey.setOnClickListener(onClickListener);
         tvBle.setOnClickListener(onClickListener);
         tvSec.setOnClickListener(onClickListener);
+        Log.i("kxyu_sign"," UID  : "+Binder.getCallingUid());
+        Log.i("kxyu_sign", " 包名  ： "+ getPackageManager().getNameForUid(Binder.getCallingUid()));;
+        Log.i("kxyu_sign", "  签名 ： "+getSignature(this));
 
+    }
 
+    public static String getSignature(Context context) {
+        try {
+
+            PackageInfo packageInfo = context.getPackageManager().getPackageInfo(context.getPackageName(), PackageManager.GET_SIGNATURES);
+
+            Signature[] signatures = packageInfo.signatures;
+
+            return signatures[0].toCharsString();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
 
@@ -99,15 +121,10 @@ public class MainActivity extends AppCompatActivity implements FastModeCallback 
                     Log.i("kxyu_sha",Convert.bytesToHexString(aesKey));
                     break;
                 case R.id.tv_ble:
-                    Log.i("kxyu_ble","  测试蓝牙协议  ");
-//                    new Thread(){
-//                        @Override
-//                        public void run() {
-////                            secLinkJni.sendData(Convert.hexStringToByte(R1), Convert.hexStringToByte(R1).length);
-//                        }
-//                    }.start();
-//                    secLinkJni.SendBuff(Convert.hexStringToByte(R1));
-                    break;
+                    Log.i("kxyu_jni","  测试蓝牙协议  ");
+
+                    SecLinkJni.initLib(getApplicationContext());
+
                 case R.id.tv_device_key:
                     String deviceKey = SecLinkJni.getDevicePublicKey();
                     Toast.makeText(getBaseContext(), deviceKey, Toast.LENGTH_SHORT).show();

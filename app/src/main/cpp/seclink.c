@@ -16,9 +16,9 @@
 #define LOGI(...) __android_log_print(ANDROID_LOG_INFO, LOG_TAG, __VA_ARGS__)
 #define ARRAY_LENGTH 6
 
-const char *RELEASE_SIGN = "3082033130820219a0030201020204596e28f5300d06092a864886f70d01010b05003049310b3009060355040613023836310a30080603550408130161310a30080603550407130161310a3008060355040a130161310a3008060355040b130161310a30080603550403130161301e170d3137303131373039303231365a170d3432303131313039303231365a3049310b3009060355040613023836310a30080603550408130161310a30080603550407130161310a3008060355040a130161310a3008060355040b130161310a3008060355040313016130820122300d06092a864886f70d01010105000382010f003082010a02820101009f1f3731ef4c65ccd6c4a7589eaffe813117d2112cc92279f41a22f210398baa2ddae52fd61c736b51b21c01d4a3233fd34b2b29365723bdb285bf0eddd043b7a9dd2829366974a690aa885b859a2d3fb272baf8c3ab94024f97117b6d6a68b74f2ed35daca41ef601a48c9f3393d92a4c3bb6f26152142e03290ef1d607361b0a2759479a7f0b94425bd885db49bcbb777f7dc10e7d3eff1fa4cc3080b4c8524ca6b761732100347b80d56a9bd5f6e7d503debe5c25c60194bd1c34c54f40172f2add9cf7e934aa7e64467c362d87fc91069fd29afc5e3445f609daf4fb99905c6ec17bea73252f6b264fdbb6963f5822997b36af9caccb2869a8b87a942df50203010001a321301f301d0603551d0e041604144aaa523ada5947919a2f7dbbe8cd3711b8dbb08e300d06092a864886f70d01010b050003820101008e6153b54104503b04a04d2746c35ce094688c2f05cd6f8c7edbcabb0d801a57c55f75930081294e63bbe27af5705511d8b7e5e263f0c6a9af58fd8c87fa43e22358c92ec4378ced89aa164f9770ebde94f865572bb846ce2cdf48ec5f6ddd1e4a733a5faca96244cd8e250cec6c0a16740e5bb7907db19d1db260806b4efd890c264ec59d46135b4f82077d3f233f5b349601b217f28d8392d90ae1fd5f462ec7e5889677bbd6c0054ea680b6dc9746077d8d536d7bc5a39dbb3074658c986a8ca14b6110599808d6f4532e32e179af558df1305880d97599d23eda5f25b0b82f091cfd702d187cfbdffc3f5bbbb9f17ae660683b07c566df5622d6e19462f8";
+const char *RELEASE_SIGN = "308203b53082029da00302010202042654b5e3300d06092a864886f70d01010b050030818a311530130603550406130c676f72696c6c57616c6c6574311530130603550408130c676f72696c6c57616c6c6574311530130603550407130c676f72696c6c57616c6c657431153013060355040a130c676f72696c6c57616c6c657431153013060355040b130c676f72696c6c57616c6c6574311530130603550403130c676f72696c6c57616c6c6574301e170d3139303132343033343433345a170d3434303131383033343433345a30818a311530130603550406130c676f72696c6c57616c6c6574311530130603550408130c676f72696c6c57616c6c6574311530130603550407130c676f72696c6c57616c6c657431153013060355040a130c676f72696c6c57616c6c657431153013060355040b130c676f72696c6c57616c6c6574311530130603550403130c676f72696c6c57616c6c657430820122300d06092a864886f70d01010105000382010f003082010a02820101008bdcafa9617d5e5e0dc7e7eea8513c8c779522c28704cb8e03911b4f0991f19351dfc3ce199b1e5150c65d381ca1434d8c9005c700d1c40463c10a9d9d8adcbddde60f42ee3b2df82b5037364de2be03f2fe8198766b0882f676c6f9fa59a8ab5fc6795205efa99ae4ca9caaf8bca840bb1f5082309690c8981aca97188f8296d95dfcd6080806141305f25de4eeac3581f11acff477b20d42a2f7bf3ea61895672e5c4af5e42b38172ab6baf625e3abce79d32bb305a836207e4c30d62a73c9e9b32fbba7187d607fd538207547a81f5085187ba8c45e3f3ea1fb44497e79195e4c72079b54ee633e0ae35cecad20082290ff261f66cb9e63e5b2a6d51a92990203010001a321301f301d0603551d0e04160414bcb630e0d8463b7375020b3bf79d093f8c289139300d06092a864886f70d01010b05000382010100392bbaf1292f1dbd6f02790de8e77ef4c3c5b5c7a4acb720c822c4c298bdf9b9d803d60b2ca7963c487114ab3e5d5b082927cc452ee87ed323ef9f145cb3eeca4396c2b59812a2358c1e10e6df69121e193a21bbc4a235d0eea10d123cc0ee059aa52236662de199be59cd3a4b932c18893ff7c4d51f805bb805382479660d316d321e551aafb3a301ed679ea1674cbabcfafb46b54ba58150467c789fb871628b367f6f382e49b7f4d39bec54ebe7fe33dbfb820920c6d4bb1dbc540a5380f7b65865e90571429ba36ec018b0c009b06d326017cbcc770ceb91cb358a44c3ba105a6b50c80803e10e08a41fed040662af39c2f867265c921362a0b09f6d1e1a";
 static jboolean auth = JNI_FALSE;
-
+char *PAKEAGE_NAME = "com.yiku.wallet";
 char *SERVER_KEY =  "MIICdQIBADANBgkqhkiG9w0BAQEFAASCAl8wggJbAgEAAoGBAJDfexhe6i0o3q7/jMRkJ3w5UWgQ\n"
                     "dqgXFUlz3cVBmFWPIWLSvil9TuhbS/TmWTlUpdizkq8nuF2hU+BsLJUkKpOSI5cWiWgf79TCrw3g\n"
                     "O0VTLa3rxCuXFT3xaPIEnJSLK7ZKK4xm+mWWkgQgZS8spm6GWw29PsJMb5lQEE2APcnJAgMBAAEC\n"
@@ -31,7 +31,7 @@ char *SERVER_KEY =  "MIICdQIBADANBgkqhkiG9w0BAQEFAASCAl8wggJbAgEAAoGBAJDfexhe6i0
                     "TsRL3IIdSdODeqvjPXdK5IbQvNkhF0+vy+YiImc050KRE6ekqrml6PQ1f4Hznt2GXlVsc8hfAkAR\n"
                     "DO06vvqdIt1osz7PFFX9Ms7J5Q2U8Bt2v9i0xPmahi25MKb+Nyv/Fdd2syt+b2YP+eAkO6OyUXqe\n"
                     "dGz65rwC";
-char *DEVICE_PUBLIC_KEY = "0220b4c720870cc6f5e4d416417fdf91d43e08c19ccc1321552f41a97983b00216";
+char *DEVICE_PUBLIC_KEY = "032cfc710a03b6e4a6141c11926cc24ae430f81c33352f2664c89f289cdf55cdad";
 char *KEY_MODEL_ARRAYS[] = {"036f3dc1195204f9ef94f39b3c8f0a9f82cde6e24324132fab9604beb78c744e43", "024e9c342b05f40b7fee06d21010c37ec36a599d6941394d20c63d20fb22fa282f",
                             "0293466e61ecc3398de8038399157e45775b93881836fc4cc51d1cc0f34651559e", "035f7fc950ede95b0c365a44d7be0cffd96c1600da147dacc87320e33308c24564",
                             "02600744be5ad4cc0864b4da8c1a92870ec4e09f1bbf2f45d31a056de6fdadbe1a", "0247f59687e6453957b0b7b2881c4dcf2999fbf69470b8e225e6ddf1bd81b84e4a"};
@@ -207,22 +207,27 @@ JNIEXPORT jbyteArray JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_veritySess
 
 JNICALL jboolean Java_com_iyich_wallet_lib_jni_SecLinkJni_initLib(JNIEnv *env, jclass class, jobject contextObject) {
 
-    jclass binderClass = (*env)->FindClass(env ,"android/os/Binder");
+//    jclass binderClass = (*env)->FindClass(env ,"android/os/Binder");
 
+    LOGI(" sign :  1111111 ");
+//    jclass context_class = (*env)->GetObjectClass(contextObject);
     jclass contextClass = (*env)->FindClass(env, "android/content/Context");
     jclass signatureClass = (*env)->FindClass(env,"android/content/pm/Signature");
     jclass packageNameClass = (*env)->FindClass(env, "android/content/pm/PackageManager");
     jclass packageInfoClass = (*env)->FindClass(env, "android/content/pm/PackageInfo");
 
+    LOGI(" sign :  2222222 ");
     jmethodID getPackageManagerId = (*env)->GetMethodID(env, contextClass, "getPackageManager", "()Landroid/content/pm/PackageManager;");
     jmethodID getPackageNameId = (*env)->GetMethodID(env, contextClass, "getPackageName", "()Ljava/lang/String;");
     jmethodID signToStringId = (*env)->GetMethodID(env, signatureClass, "toCharsString", "()Ljava/lang/String;");
     jmethodID getPackageInfoId = (*env)->GetMethodID(env, packageNameClass, "getPackageInfo", "(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;");
     jmethodID getRunningPackageName = (*env)->GetMethodID(env, packageNameClass, "getNameForUid", "(I)Ljava/lang/String;");
-    jmethodID getUid = (*env)->GetStaticMethodID(env, binderClass, "getCallingUid", "()I");
+//    jmethodID getUid = (*env)->GetStaticMethodID(env, binderClass, "getCallingUid", "()I");
 
-    jint uid = (*env)->CallStaticIntMethod(env, binderClass, getUid);
+    LOGI(" sign :  33333333 ");
+//    jint uid = (*env)->CallStaticIntMethod(env, binderClass, getUid);
 
+//    LOGI(" sign :  UID ： %d ", uid);
 
     jobject packageManagerObject = (*env)->CallObjectMethod(env, contextObject, getPackageManagerId);
     jstring packNameString = (jstring) (*env)->CallObjectMethod(env, contextObject, getPackageNameId);
@@ -231,35 +236,43 @@ JNICALL jboolean Java_com_iyich_wallet_lib_jni_SecLinkJni_initLib(JNIEnv *env, j
     jobjectArray signatureArray = (jobjectArray) (*env)->GetObjectField(env, packageInfoObject, signaturefieldID);
     jobject signatureObject = (*env)->GetObjectArrayElement(env, signatureArray, 0);
 
-    jstring mRunningPackageName = (jstring) (*env)->CallObjectMethod(packageManagerObject, getRunningPackageName, uid);
+//    jstring mRunningPackageName = (jstring) (*env)->CallObjectMethod(env, packageManagerObject, getRunningPackageName, uid);
 
-    if (mRunningPackageName) {
-        const char *runPackageName = (*env)->GetStringUTFChars(env, mRunningPackageName, 0);
+
+
+//    if (mRunningPackageName) {
+        const char *runPackageName = (*env)->GetStringUTFChars(env, packNameString, 0);
         LOGI("rPackageName:%s", runPackageName);
-        if (strcmp(runPackageName, "reazerdp.com.mytestso") != 0) {
+        if (strcmp(runPackageName, PAKEAGE_NAME) != 0) {
+            LOGI(" jni 验证 包名不相同 ");
             return JNI_FALSE;
+        } else{
+            LOGI(" jni 验证 包名相同 ");
         }
-        (*env)->ReleaseStringUTFChars(env, mRunningPackageName, runPackageName);
-    } else {
-        LOGI("rPackageName:%s", "is null");
-        return JNI_FALSE;
-    }
+        (*env)->ReleaseStringUTFChars(env, packNameString, runPackageName);
+
+//    } else {
+//        LOGI("rPackageName:%s", "is null");
+//        return JNI_FALSE;
+//    }
 
     jstring signatureStr = (jstring) (*env)->CallObjectMethod(env, signatureObject, signToStringId);
+
     const char *signStrng = (*env)->GetStringUTFChars(env, signatureStr, 0);
 
-    (*env)->DeleteLocalRef(env, binderClass);
+//    (*env)->DeleteLocalRef(env, binderClass);
     (*env)->DeleteLocalRef(env, contextClass);
     (*env)->DeleteLocalRef(env, signatureClass);
     (*env)->DeleteLocalRef(env, packageNameClass);
     (*env)->DeleteLocalRef(env, packageInfoClass);
 
-
     if (strcmp(signStrng, RELEASE_SIGN) == 0) {
         (*env)->ReleaseStringUTFChars(env, signatureStr, signStrng);
+        LOGI(" jni 验证   验证签名成功 ");
         auth = JNI_TRUE;
         return JNI_TRUE;
     } else {
+        LOGI(" jni 验证  验证签名失败 ");
         auth = JNI_FALSE;
         return JNI_FALSE;
     }
@@ -269,7 +282,7 @@ JNIEXPORT jstring JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_getRsaPrivate
     if(auth == JNI_TRUE){
         return  (*env) -> NewStringUTF(env, SERVER_KEY);
     } else{
-        return  (*env) -> NewStringUTF(env, "12112");
+        return  (*env) -> NewStringUTF(env, "key Error");
     }
 }
 
@@ -277,7 +290,7 @@ JNIEXPORT jstring JNICALL Java_com_iyich_wallet_lib_jni_SecLinkJni_getDevicePubl
     if(auth == JNI_TRUE){
         return  (*env) -> NewStringUTF(env, DEVICE_PUBLIC_KEY);
     } else{
-        return  (*env) -> NewStringUTF(env, "123123123");
+        return  (*env) -> NewStringUTF(env, "key Error");
     }
 }
 
@@ -321,6 +334,8 @@ jint JNI_OnLoad(JavaVM* vm, void* reserved){
     if ((*vm)->GetEnv(vm,(void**) &env, JNI_VERSION_1_6) != JNI_OK) {
         return -1;
     }
+
+    LOGI(" kxyu==================================   JNI_OnLoad  22222 !!!   ");
 
 //    /*
 //     * 如果要注册，只需要两步，
