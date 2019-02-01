@@ -14,10 +14,8 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.iyich.wallet.lib.jni.FastModeJNI;
 import com.iyich.wallet.lib.jni.SecLinkJni;
 
-import java.security.SecureRandom;
 import java.util.HashMap;
 import java.util.Random;
 
@@ -138,9 +136,6 @@ public class MainActivity extends AppCompatActivity implements FastModeCallback 
                     }else {
                         Log.i("kxyu_jni","  不想等    ");
                     }
-                    Log.i("kxyu_jni"," jni  serverKey  "+serverKey +" 长度  ：  "+serverKey.length());
-
-                    Log.i("kxyu_jni"," local  serverKey  "+PRIVATE_KEY +" 长度  ：  "+PRIVATE_KEY.length());
 
                     break;
                 case R.id.tv_model_key:
