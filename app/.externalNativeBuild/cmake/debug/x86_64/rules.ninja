@@ -25,7 +25,7 @@ rule CUSTOM_COMMAND
 rule C_COMPILER__secLinkJni
   depfile = $DEP_FILE
   deps = gcc
-  command = /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang  --target=x86_64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out   -c $IN_ABS
+  command = /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang  --target=x86_64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out   -c $IN_ABS
   description = Building C object $out
 
 
@@ -33,7 +33,7 @@ rule C_COMPILER__secLinkJni
 # Rule for linking C shared library.
 
 rule C_SHARED_LIBRARY_LINKER__secLinkJni
-  command = $PRE_LINK && /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang  --target=x86_64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -fPIC $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared $SONAME_FLAG$SONAME -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  command = $PRE_LINK && /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang  --target=x86_64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -fPIC $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared $SONAME_FLAG$SONAME -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking C shared library $TARGET_FILE
   restat = $RESTAT
 
