@@ -7,6 +7,6 @@ package Format;
 public interface FastModeCallback {
 
     void sendData(byte[] data);
-    void revice(byte[] data, int len);
+    void revice(byte[] data, int len, String mac);
 
 }

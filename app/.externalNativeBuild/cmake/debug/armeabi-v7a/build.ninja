@@ -49,270 +49,46 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
   restat = 1
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
-# Object build statements for SHARED_LIBRARY target secLinkJni
+# Object build statements for SHARED_LIBRARY target fastmode
 
-build CMakeFiles/secLinkJni.dir/src/main/cpp/bleProtocol/fastmode.c.o: C_COMPILER__secLinkJni ../../../../src/main/cpp/bleProtocol/fastmode.c
-  DEFINES = -DsecLinkJni_EXPORTS
-  DEP_FILE = CMakeFiles/secLinkJni.dir/src/main/cpp/bleProtocol/fastmode.c.o.d
-  FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC
+build CMakeFiles/fastmode.dir/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.cpp.o: CXX_COMPILER__fastmode ../../../../src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.cpp
+  DEFINES = -Dfastmode_EXPORTS
+  DEP_FILE = CMakeFiles/fastmode.dir/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.cpp.o.d
+  FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -stdlib=libc++ -std=c++11 -O0 -fno-limit-debug-info  -fPIC
+  IN_ABS = /Users/apple/Desktop/JniLibWallet/app/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.cpp
+  OBJECT_DIR = CMakeFiles/fastmode.dir
+  OBJECT_FILE_DIR = CMakeFiles/fastmode.dir/src/main/cpp
+build CMakeFiles/fastmode.dir/src/main/cpp/bleProtocol/fastmode.c.o: C_COMPILER__fastmode ../../../../src/main/cpp/bleProtocol/fastmode.c
+  DEFINES = -Dfastmode_EXPORTS
+  DEP_FILE = CMakeFiles/fastmode.dir/src/main/cpp/bleProtocol/fastmode.c.o.d
+  FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC
   IN_ABS = /Users/apple/Desktop/JniLibWallet/app/src/main/cpp/bleProtocol/fastmode.c
-  OBJECT_DIR = CMakeFiles/secLinkJni.dir
-  OBJECT_FILE_DIR = CMakeFiles/secLinkJni.dir/src/main/cpp/bleProtocol
-build CMakeFiles/secLinkJni.dir/src/main/cpp/seclink.c.o: C_COMPILER__secLinkJni ../../../../src/main/cpp/seclink.c
-  DEFINES = -DsecLinkJni_EXPORTS
-  DEP_FILE = CMakeFiles/secLinkJni.dir/src/main/cpp/seclink.c.o.d
-  FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = /Users/apple/Desktop/JniLibWallet/app/src/main/cpp/seclink.c
-  OBJECT_DIR = CMakeFiles/secLinkJni.dir
-  OBJECT_FILE_DIR = CMakeFiles/secLinkJni.dir/src/main/cpp
-build CMakeFiles/secLinkJni.dir/src/main/cpp/sec/ecdsa.c.o: C_COMPILER__secLinkJni ../../../../src/main/cpp/sec/ecdsa.c
-  DEFINES = -DsecLinkJni_EXPORTS
-  DEP_FILE = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/ecdsa.c.o.d
-  FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = /Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/ecdsa.c
-  OBJECT_DIR = CMakeFiles/secLinkJni.dir
-  OBJECT_FILE_DIR = CMakeFiles/secLinkJni.dir/src/main/cpp/sec
-build CMakeFiles/secLinkJni.dir/src/main/cpp/sec/secp256k1.c.o: C_COMPILER__secLinkJni ../../../../src/main/cpp/sec/secp256k1.c
-  DEFINES = -DsecLinkJni_EXPORTS
-  DEP_FILE = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/secp256k1.c.o.d
-  FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = /Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/secp256k1.c
-  OBJECT_DIR = CMakeFiles/secLinkJni.dir
-  OBJECT_FILE_DIR = CMakeFiles/secLinkJni.dir/src/main/cpp/sec
-build CMakeFiles/secLinkJni.dir/src/main/cpp/sec/pbkdf2.c.o: C_COMPILER__secLinkJni ../../../../src/main/cpp/sec/pbkdf2.c
-  DEFINES = -DsecLinkJni_EXPORTS
-  DEP_FILE = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/pbkdf2.c.o.d
-  FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = /Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/pbkdf2.c
-  OBJECT_DIR = CMakeFiles/secLinkJni.dir
-  OBJECT_FILE_DIR = CMakeFiles/secLinkJni.dir/src/main/cpp/sec
-build CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/address.c.o: C_COMPILER__secLinkJni ../../../../src/main/cpp/sec/sing/address.c
-  DEFINES = -DsecLinkJni_EXPORTS
-  DEP_FILE = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/address.c.o.d
-  FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = /Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/address.c
-  OBJECT_DIR = CMakeFiles/secLinkJni.dir
-  OBJECT_FILE_DIR = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing
-build CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/base58.c.o: C_COMPILER__secLinkJni ../../../../src/main/cpp/sec/sing/base58.c
-  DEFINES = -DsecLinkJni_EXPORTS
-  DEP_FILE = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/base58.c.o.d
-  FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = /Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/base58.c
-  OBJECT_DIR = CMakeFiles/secLinkJni.dir
-  OBJECT_FILE_DIR = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing
-build CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/bignum.c.o: C_COMPILER__secLinkJni ../../../../src/main/cpp/sec/sing/bignum.c
-  DEFINES = -DsecLinkJni_EXPORTS
-  DEP_FILE = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/bignum.c.o.d
-  FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = /Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/bignum.c
-  OBJECT_DIR = CMakeFiles/secLinkJni.dir
-  OBJECT_FILE_DIR = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing
-build CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/bip32.c.o: C_COMPILER__secLinkJni ../../../../src/main/cpp/sec/sing/bip32.c
-  DEFINES = -DsecLinkJni_EXPORTS
-  DEP_FILE = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/bip32.c.o.d
-  FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = /Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/bip32.c
-  OBJECT_DIR = CMakeFiles/secLinkJni.dir
-  OBJECT_FILE_DIR = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing
-build CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/blake256.c.o: C_COMPILER__secLinkJni ../../../../src/main/cpp/sec/sing/blake256.c
-  DEFINES = -DsecLinkJni_EXPORTS
-  DEP_FILE = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/blake256.c.o.d
-  FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = /Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/blake256.c
-  OBJECT_DIR = CMakeFiles/secLinkJni.dir
-  OBJECT_FILE_DIR = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing
-build CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/blake2b.c.o: C_COMPILER__secLinkJni ../../../../src/main/cpp/sec/sing/blake2b.c
-  DEFINES = -DsecLinkJni_EXPORTS
-  DEP_FILE = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/blake2b.c.o.d
-  FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = /Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/blake2b.c
-  OBJECT_DIR = CMakeFiles/secLinkJni.dir
-  OBJECT_FILE_DIR = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing
-build CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/curves.c.o: C_COMPILER__secLinkJni ../../../../src/main/cpp/sec/sing/curves.c
-  DEFINES = -DsecLinkJni_EXPORTS
-  DEP_FILE = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/curves.c.o.d
-  FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = /Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/curves.c
-  OBJECT_DIR = CMakeFiles/secLinkJni.dir
-  OBJECT_FILE_DIR = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing
-build CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/hasher.c.o: C_COMPILER__secLinkJni ../../../../src/main/cpp/sec/sing/hasher.c
-  DEFINES = -DsecLinkJni_EXPORTS
-  DEP_FILE = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/hasher.c.o.d
-  FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = /Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/hasher.c
-  OBJECT_DIR = CMakeFiles/secLinkJni.dir
-  OBJECT_FILE_DIR = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing
-build CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/hmac.c.o: C_COMPILER__secLinkJni ../../../../src/main/cpp/sec/sing/hmac.c
-  DEFINES = -DsecLinkJni_EXPORTS
-  DEP_FILE = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/hmac.c.o.d
-  FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = /Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/hmac.c
-  OBJECT_DIR = CMakeFiles/secLinkJni.dir
-  OBJECT_FILE_DIR = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing
-build CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/memzero.c.o: C_COMPILER__secLinkJni ../../../../src/main/cpp/sec/sing/memzero.c
-  DEFINES = -DsecLinkJni_EXPORTS
-  DEP_FILE = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/memzero.c.o.d
-  FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = /Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/memzero.c
-  OBJECT_DIR = CMakeFiles/secLinkJni.dir
-  OBJECT_FILE_DIR = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing
-build CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/nist256p1.c.o: C_COMPILER__secLinkJni ../../../../src/main/cpp/sec/sing/nist256p1.c
-  DEFINES = -DsecLinkJni_EXPORTS
-  DEP_FILE = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/nist256p1.c.o.d
-  FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = /Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/nist256p1.c
-  OBJECT_DIR = CMakeFiles/secLinkJni.dir
-  OBJECT_FILE_DIR = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing
-build CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/rand.c.o: C_COMPILER__secLinkJni ../../../../src/main/cpp/sec/sing/rand.c
-  DEFINES = -DsecLinkJni_EXPORTS
-  DEP_FILE = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/rand.c.o.d
-  FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = /Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/rand.c
-  OBJECT_DIR = CMakeFiles/secLinkJni.dir
-  OBJECT_FILE_DIR = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing
-build CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ripemd160.c.o: C_COMPILER__secLinkJni ../../../../src/main/cpp/sec/sing/ripemd160.c
-  DEFINES = -DsecLinkJni_EXPORTS
-  DEP_FILE = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ripemd160.c.o.d
-  FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = /Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/ripemd160.c
-  OBJECT_DIR = CMakeFiles/secLinkJni.dir
-  OBJECT_FILE_DIR = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing
-build CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/sha2.c.o: C_COMPILER__secLinkJni ../../../../src/main/cpp/sec/sing/sha2.c
-  DEFINES = -DsecLinkJni_EXPORTS
-  DEP_FILE = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/sha2.c.o.d
-  FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = /Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/sha2.c
-  OBJECT_DIR = CMakeFiles/secLinkJni.dir
-  OBJECT_FILE_DIR = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing
-build CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/sha3.c.o: C_COMPILER__secLinkJni ../../../../src/main/cpp/sec/sing/sha3.c
-  DEFINES = -DsecLinkJni_EXPORTS
-  DEP_FILE = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/sha3.c.o.d
-  FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = /Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/sha3.c
-  OBJECT_DIR = CMakeFiles/secLinkJni.dir
-  OBJECT_FILE_DIR = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing
-build CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/aes/aes_modes.c.o: C_COMPILER__secLinkJni ../../../../src/main/cpp/sec/sing/aes/aes_modes.c
-  DEFINES = -DsecLinkJni_EXPORTS
-  DEP_FILE = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/aes/aes_modes.c.o.d
-  FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = /Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/aes/aes_modes.c
-  OBJECT_DIR = CMakeFiles/secLinkJni.dir
-  OBJECT_FILE_DIR = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/aes
-build CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/aes/aescrypt.c.o: C_COMPILER__secLinkJni ../../../../src/main/cpp/sec/sing/aes/aescrypt.c
-  DEFINES = -DsecLinkJni_EXPORTS
-  DEP_FILE = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/aes/aescrypt.c.o.d
-  FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = /Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/aes/aescrypt.c
-  OBJECT_DIR = CMakeFiles/secLinkJni.dir
-  OBJECT_FILE_DIR = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/aes
-build CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/aes/aeskey.c.o: C_COMPILER__secLinkJni ../../../../src/main/cpp/sec/sing/aes/aeskey.c
-  DEFINES = -DsecLinkJni_EXPORTS
-  DEP_FILE = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/aes/aeskey.c.o.d
-  FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = /Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/aes/aeskey.c
-  OBJECT_DIR = CMakeFiles/secLinkJni.dir
-  OBJECT_FILE_DIR = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/aes
-build CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/aes/aestab.c.o: C_COMPILER__secLinkJni ../../../../src/main/cpp/sec/sing/aes/aestab.c
-  DEFINES = -DsecLinkJni_EXPORTS
-  DEP_FILE = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/aes/aestab.c.o.d
-  FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = /Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/aes/aestab.c
-  OBJECT_DIR = CMakeFiles/secLinkJni.dir
-  OBJECT_FILE_DIR = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/aes
-build CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/curve25519-donna-32bit.c.o: C_COMPILER__secLinkJni ../../../../src/main/cpp/sec/sing/ed25519-donna/curve25519-donna-32bit.c
-  DEFINES = -DsecLinkJni_EXPORTS
-  DEP_FILE = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/curve25519-donna-32bit.c.o.d
-  FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = /Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/ed25519-donna/curve25519-donna-32bit.c
-  OBJECT_DIR = CMakeFiles/secLinkJni.dir
-  OBJECT_FILE_DIR = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna
-build CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/curve25519-donna-helpers.c.o: C_COMPILER__secLinkJni ../../../../src/main/cpp/sec/sing/ed25519-donna/curve25519-donna-helpers.c
-  DEFINES = -DsecLinkJni_EXPORTS
-  DEP_FILE = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/curve25519-donna-helpers.c.o.d
-  FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = /Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/ed25519-donna/curve25519-donna-helpers.c
-  OBJECT_DIR = CMakeFiles/secLinkJni.dir
-  OBJECT_FILE_DIR = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna
-build CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/curve25519-donna-scalarmult-base.c.o: C_COMPILER__secLinkJni ../../../../src/main/cpp/sec/sing/ed25519-donna/curve25519-donna-scalarmult-base.c
-  DEFINES = -DsecLinkJni_EXPORTS
-  DEP_FILE = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/curve25519-donna-scalarmult-base.c.o.d
-  FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = /Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/ed25519-donna/curve25519-donna-scalarmult-base.c
-  OBJECT_DIR = CMakeFiles/secLinkJni.dir
-  OBJECT_FILE_DIR = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna
-build CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519-donna-32bit-tables.c.o: C_COMPILER__secLinkJni ../../../../src/main/cpp/sec/sing/ed25519-donna/ed25519-donna-32bit-tables.c
-  DEFINES = -DsecLinkJni_EXPORTS
-  DEP_FILE = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519-donna-32bit-tables.c.o.d
-  FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = /Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/ed25519-donna/ed25519-donna-32bit-tables.c
-  OBJECT_DIR = CMakeFiles/secLinkJni.dir
-  OBJECT_FILE_DIR = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna
-build CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519-donna-basepoint-table.c.o: C_COMPILER__secLinkJni ../../../../src/main/cpp/sec/sing/ed25519-donna/ed25519-donna-basepoint-table.c
-  DEFINES = -DsecLinkJni_EXPORTS
-  DEP_FILE = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519-donna-basepoint-table.c.o.d
-  FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = /Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/ed25519-donna/ed25519-donna-basepoint-table.c
-  OBJECT_DIR = CMakeFiles/secLinkJni.dir
-  OBJECT_FILE_DIR = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna
-build CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519-donna-impl-base.c.o: C_COMPILER__secLinkJni ../../../../src/main/cpp/sec/sing/ed25519-donna/ed25519-donna-impl-base.c
-  DEFINES = -DsecLinkJni_EXPORTS
-  DEP_FILE = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519-donna-impl-base.c.o.d
-  FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = /Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/ed25519-donna/ed25519-donna-impl-base.c
-  OBJECT_DIR = CMakeFiles/secLinkJni.dir
-  OBJECT_FILE_DIR = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna
-build CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519-keccak.c.o: C_COMPILER__secLinkJni ../../../../src/main/cpp/sec/sing/ed25519-donna/ed25519-keccak.c
-  DEFINES = -DsecLinkJni_EXPORTS
-  DEP_FILE = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519-keccak.c.o.d
-  FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = /Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/ed25519-donna/ed25519-keccak.c
-  OBJECT_DIR = CMakeFiles/secLinkJni.dir
-  OBJECT_FILE_DIR = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna
-build CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519-sha3.c.o: C_COMPILER__secLinkJni ../../../../src/main/cpp/sec/sing/ed25519-donna/ed25519-sha3.c
-  DEFINES = -DsecLinkJni_EXPORTS
-  DEP_FILE = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519-sha3.c.o.d
-  FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = /Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/ed25519-donna/ed25519-sha3.c
-  OBJECT_DIR = CMakeFiles/secLinkJni.dir
-  OBJECT_FILE_DIR = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna
-build CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519.c.o: C_COMPILER__secLinkJni ../../../../src/main/cpp/sec/sing/ed25519-donna/ed25519.c
-  DEFINES = -DsecLinkJni_EXPORTS
-  DEP_FILE = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519.c.o.d
-  FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = /Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/ed25519-donna/ed25519.c
-  OBJECT_DIR = CMakeFiles/secLinkJni.dir
-  OBJECT_FILE_DIR = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna
-build CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/modm-donna-32bit.c.o: C_COMPILER__secLinkJni ../../../../src/main/cpp/sec/sing/ed25519-donna/modm-donna-32bit.c
-  DEFINES = -DsecLinkJni_EXPORTS
-  DEP_FILE = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/modm-donna-32bit.c.o.d
-  FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = /Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/ed25519-donna/modm-donna-32bit.c
-  OBJECT_DIR = CMakeFiles/secLinkJni.dir
-  OBJECT_FILE_DIR = CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna
+  OBJECT_DIR = CMakeFiles/fastmode.dir
+  OBJECT_FILE_DIR = CMakeFiles/fastmode.dir/src/main/cpp/bleProtocol
 
 # =============================================================================
-# Link build statements for SHARED_LIBRARY target secLinkJni
+# Link build statements for SHARED_LIBRARY target fastmode
 
 
 #############################################
-# Link the shared library ../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libsecLinkJni.so
+# Link the shared library ../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libfastmode.so
 
-build ../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libsecLinkJni.so: C_SHARED_LIBRARY_LINKER__secLinkJni CMakeFiles/secLinkJni.dir/src/main/cpp/bleProtocol/fastmode.c.o CMakeFiles/secLinkJni.dir/src/main/cpp/seclink.c.o CMakeFiles/secLinkJni.dir/src/main/cpp/sec/ecdsa.c.o CMakeFiles/secLinkJni.dir/src/main/cpp/sec/secp256k1.c.o CMakeFiles/secLinkJni.dir/src/main/cpp/sec/pbkdf2.c.o CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/address.c.o CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/base58.c.o CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/bignum.c.o CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/bip32.c.o CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/blake256.c.o CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/blake2b.c.o CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/curves.c.o CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/hasher.c.o CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/hmac.c.o CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/memzero.c.o CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/nist256p1.c.o CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/rand.c.o CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ripemd160.c.o CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/sha2.c.o CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/sha3.c.o CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/aes/aes_modes.c.o CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/aes/aescrypt.c.o CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/aes/aeskey.c.o CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/aes/aestab.c.o CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/curve25519-donna-32bit.c.o CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/curve25519-donna-helpers.c.o CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/curve25519-donna-scalarmult-base.c.o CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519-donna-32bit-tables.c.o CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519-donna-basepoint-table.c.o CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519-donna-impl-base.c.o CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519-keccak.c.o CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519-sha3.c.o CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/ed25519.c.o CMakeFiles/secLinkJni.dir/src/main/cpp/sec/sing/ed25519-donna/modm-donna-32bit.c.o | /Users/apple/Library/Android/sdk/ndk-bundle/platforms/android-18/arch-arm/usr/lib/liblog.so
-  LANGUAGE_COMPILE_FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info
+build ../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libfastmode.so: CXX_SHARED_LIBRARY_LINKER__fastmode CMakeFiles/fastmode.dir/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.cpp.o CMakeFiles/fastmode.dir/src/main/cpp/bleProtocol/fastmode.c.o | /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/arm-linux-androideabi/16/liblog.so
+  LANGUAGE_COMPILE_FLAGS = --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -stdlib=libc++ -std=c++11 -O0 -fno-limit-debug-info
   LINK_FLAGS = -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now
   LINK_LIBRARIES = -llog -latomic -lm
-  OBJECT_DIR = CMakeFiles/secLinkJni.dir
+  OBJECT_DIR = CMakeFiles/fastmode.dir
   POST_BUILD = :
   PRE_LINK = :
-  SONAME = libsecLinkJni.so
+  SONAME = libfastmode.so
   SONAME_FLAG = -Wl,-soname,
-  TARGET_FILE = ../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libsecLinkJni.so
-  TARGET_PDB = secLinkJni.so.dbg
+  TARGET_FILE = ../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libfastmode.so
+  TARGET_PDB = fastmode.so.dbg
 # =============================================================================
 # Target aliases.
 
-build libsecLinkJni.so: phony ../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libsecLinkJni.so
-build secLinkJni: phony ../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libsecLinkJni.so
+build fastmode: phony ../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libfastmode.so
+build libfastmode.so: phony ../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libfastmode.so
 # =============================================================================
 # Folder targets.
 
@@ -324,7 +100,7 @@ build secLinkJni: phony ../../../../build/intermediates/cmake/debug/obj/armeabi-
 #############################################
 # The main all target.
 
-build all: phony ../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libsecLinkJni.so
+build all: phony ../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libfastmode.so
 
 #############################################
 # Make the all target the default.
@@ -334,13 +110,13 @@ default all
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../../../../CMakeLists.txt /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCInformation.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCXXInformation.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCommonLanguageInclude.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeGenericSystem.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeLanguageInformation.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeSystemSpecificInformation.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeSystemSpecificInitialize.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang-C.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang-CXX.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/GNU.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Platform/Android.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Platform/Linux.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Platform/UnixPaths.cmake /Users/apple/Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake /Users/apple/Library/Android/sdk/ndk-bundle/build/cmake/platforms.cmake CMakeCache.txt CMakeFiles/3.6.0-rc2/CMakeCCompiler.cmake CMakeFiles/3.6.0-rc2/CMakeCXXCompiler.cmake CMakeFiles/3.6.0-rc2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../../../../CMakeLists.txt /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCCompiler.cmake.in /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCCompilerABI.c /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCInformation.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCXXCompiler.cmake.in /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCXXCompilerABI.cpp /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCXXInformation.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCommonLanguageInclude.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeDetermineCCompiler.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeDetermineCXXCompiler.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeDetermineCompileFeatures.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeDetermineCompiler.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeDetermineCompilerABI.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeDetermineSystem.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeFindBinUtils.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeGenericSystem.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeLanguageInformation.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeParseImplicitLinkInfo.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeSystem.cmake.in /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeSystemSpecificInformation.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeSystemSpecificInitialize.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeTestCCompiler.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeTestCXXCompiler.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeTestCompilerCommon.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang-C-FeatureTests.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang-C.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang-CXX-FeatureTests.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang-CXX-TestableFeatures.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang-CXX.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/GNU.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Internal/FeatureTesting.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Platform/Android.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Platform/Linux.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Platform/UnixPaths.cmake /Users/apple/Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake /Users/apple/Library/Android/sdk/ndk-bundle/build/cmake/platforms.cmake CMakeCache.txt CMakeFiles/3.6.0-rc2/CMakeCCompiler.cmake CMakeFiles/3.6.0-rc2/CMakeCXXCompiler.cmake CMakeFiles/3.6.0-rc2/CMakeSystem.cmake CMakeFiles/feature_tests.c CMakeFiles/feature_tests.cxx
   pool = console
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../../../../CMakeLists.txt /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCInformation.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCXXInformation.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCommonLanguageInclude.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeGenericSystem.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeLanguageInformation.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeSystemSpecificInformation.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeSystemSpecificInitialize.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang-C.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang-CXX.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/GNU.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Platform/Android.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Platform/Linux.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Platform/UnixPaths.cmake /Users/apple/Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake /Users/apple/Library/Android/sdk/ndk-bundle/build/cmake/platforms.cmake CMakeCache.txt CMakeFiles/3.6.0-rc2/CMakeCCompiler.cmake CMakeFiles/3.6.0-rc2/CMakeCXXCompiler.cmake CMakeFiles/3.6.0-rc2/CMakeSystem.cmake: phony
+build ../../../../CMakeLists.txt /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCCompiler.cmake.in /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCCompilerABI.c /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCInformation.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCXXCompiler.cmake.in /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCXXCompilerABI.cpp /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCXXInformation.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCommonLanguageInclude.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeDetermineCCompiler.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeDetermineCXXCompiler.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeDetermineCompileFeatures.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeDetermineCompiler.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeDetermineCompilerABI.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeDetermineSystem.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeFindBinUtils.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeGenericSystem.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeLanguageInformation.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeParseImplicitLinkInfo.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeSystem.cmake.in /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeSystemSpecificInformation.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeSystemSpecificInitialize.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeTestCCompiler.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeTestCXXCompiler.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeTestCompilerCommon.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang-C-FeatureTests.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang-C.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang-CXX-FeatureTests.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang-CXX-TestableFeatures.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang-CXX.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/GNU.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Internal/FeatureTesting.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Platform/Android.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Platform/Linux.cmake /Users/apple/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Platform/UnixPaths.cmake /Users/apple/Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake /Users/apple/Library/Android/sdk/ndk-bundle/build/cmake/platforms.cmake CMakeCache.txt CMakeFiles/3.6.0-rc2/CMakeCCompiler.cmake CMakeFiles/3.6.0-rc2/CMakeCXXCompiler.cmake CMakeFiles/3.6.0-rc2/CMakeSystem.cmake CMakeFiles/feature_tests.c CMakeFiles/feature_tests.cxx: phony
 
 #############################################
 # Clean all the built files.

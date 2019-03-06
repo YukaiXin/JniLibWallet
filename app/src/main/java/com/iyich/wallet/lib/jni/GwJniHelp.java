@@ -22,7 +22,7 @@ public class GwJniHelp {
     }
 
     public void RecieveBuff(byte[] data, int len){
-        fastModeCallback.revice(data, len);
+//        fastModeCallback.revice(data, len);
     }
 
     public native boolean sendData(byte[] data, int length);

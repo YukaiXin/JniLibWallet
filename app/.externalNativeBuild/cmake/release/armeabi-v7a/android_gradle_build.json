@@ -6,222 +6,31 @@
 	[
 		"/Users/apple/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a --target clean"
 	],
+	"cppFileExtensions" : [ "cpp" ],
 	"libraries" : 
 	{
-		"secLinkJni-Release-armeabi-v7a" : 
+		"fastmode-Release-armeabi-v7a" : 
 		{
 			"abi" : "armeabi-v7a",
-			"artifactName" : "secLinkJni",
-			"buildCommand" : "/Users/apple/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a --target secLinkJni",
+			"artifactName" : "fastmode",
+			"buildCommand" : "/Users/apple/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a --target fastmode",
 			"buildType" : "release",
 			"files" : 
 			[
 				
 				{
-					"flags" : "  --target=armv7-none-linux-androideabi18 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -DsecLinkJni_EXPORTS  -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -Oz -DNDEBUG  -fPIC      -c ",
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64  -Dfastmode_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -stdlib=libc++ -std=c++11 -Oz -DNDEBUG  -fPIC    -c ",
+					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.cpp",
+					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -Dfastmode_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Oz -DNDEBUG  -fPIC      -c ",
 					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/bleProtocol/fastmode.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a"
-				},
-				
-				{
-					"flags" : "  --target=armv7-none-linux-androideabi18 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -DsecLinkJni_EXPORTS  -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -Oz -DNDEBUG  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/seclink.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a"
-				},
-				
-				{
-					"flags" : "  --target=armv7-none-linux-androideabi18 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -DsecLinkJni_EXPORTS  -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -Oz -DNDEBUG  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/ecdsa.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a"
-				},
-				
-				{
-					"flags" : "  --target=armv7-none-linux-androideabi18 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -DsecLinkJni_EXPORTS  -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -Oz -DNDEBUG  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/secp256k1.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a"
-				},
-				
-				{
-					"flags" : "  --target=armv7-none-linux-androideabi18 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -DsecLinkJni_EXPORTS  -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -Oz -DNDEBUG  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/pbkdf2.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a"
-				},
-				
-				{
-					"flags" : "  --target=armv7-none-linux-androideabi18 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -DsecLinkJni_EXPORTS  -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -Oz -DNDEBUG  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/address.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a"
-				},
-				
-				{
-					"flags" : "  --target=armv7-none-linux-androideabi18 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -DsecLinkJni_EXPORTS  -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -Oz -DNDEBUG  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/base58.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a"
-				},
-				
-				{
-					"flags" : "  --target=armv7-none-linux-androideabi18 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -DsecLinkJni_EXPORTS  -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -Oz -DNDEBUG  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/bignum.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a"
-				},
-				
-				{
-					"flags" : "  --target=armv7-none-linux-androideabi18 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -DsecLinkJni_EXPORTS  -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -Oz -DNDEBUG  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/bip32.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a"
-				},
-				
-				{
-					"flags" : "  --target=armv7-none-linux-androideabi18 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -DsecLinkJni_EXPORTS  -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -Oz -DNDEBUG  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/blake256.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a"
-				},
-				
-				{
-					"flags" : "  --target=armv7-none-linux-androideabi18 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -DsecLinkJni_EXPORTS  -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -Oz -DNDEBUG  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/blake2b.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a"
-				},
-				
-				{
-					"flags" : "  --target=armv7-none-linux-androideabi18 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -DsecLinkJni_EXPORTS  -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -Oz -DNDEBUG  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/curves.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a"
-				},
-				
-				{
-					"flags" : "  --target=armv7-none-linux-androideabi18 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -DsecLinkJni_EXPORTS  -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -Oz -DNDEBUG  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/hasher.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a"
-				},
-				
-				{
-					"flags" : "  --target=armv7-none-linux-androideabi18 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -DsecLinkJni_EXPORTS  -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -Oz -DNDEBUG  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/hmac.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a"
-				},
-				
-				{
-					"flags" : "  --target=armv7-none-linux-androideabi18 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -DsecLinkJni_EXPORTS  -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -Oz -DNDEBUG  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/memzero.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a"
-				},
-				
-				{
-					"flags" : "  --target=armv7-none-linux-androideabi18 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -DsecLinkJni_EXPORTS  -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -Oz -DNDEBUG  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/nist256p1.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a"
-				},
-				
-				{
-					"flags" : "  --target=armv7-none-linux-androideabi18 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -DsecLinkJni_EXPORTS  -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -Oz -DNDEBUG  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/rand.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a"
-				},
-				
-				{
-					"flags" : "  --target=armv7-none-linux-androideabi18 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -DsecLinkJni_EXPORTS  -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -Oz -DNDEBUG  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/ripemd160.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a"
-				},
-				
-				{
-					"flags" : "  --target=armv7-none-linux-androideabi18 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -DsecLinkJni_EXPORTS  -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -Oz -DNDEBUG  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/sha2.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a"
-				},
-				
-				{
-					"flags" : "  --target=armv7-none-linux-androideabi18 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -DsecLinkJni_EXPORTS  -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -Oz -DNDEBUG  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/sha3.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a"
-				},
-				
-				{
-					"flags" : "  --target=armv7-none-linux-androideabi18 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -DsecLinkJni_EXPORTS  -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -Oz -DNDEBUG  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/aes/aes_modes.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a"
-				},
-				
-				{
-					"flags" : "  --target=armv7-none-linux-androideabi18 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -DsecLinkJni_EXPORTS  -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -Oz -DNDEBUG  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/aes/aescrypt.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a"
-				},
-				
-				{
-					"flags" : "  --target=armv7-none-linux-androideabi18 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -DsecLinkJni_EXPORTS  -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -Oz -DNDEBUG  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/aes/aeskey.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a"
-				},
-				
-				{
-					"flags" : "  --target=armv7-none-linux-androideabi18 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -DsecLinkJni_EXPORTS  -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -Oz -DNDEBUG  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/aes/aestab.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a"
-				},
-				
-				{
-					"flags" : "  --target=armv7-none-linux-androideabi18 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -DsecLinkJni_EXPORTS  -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -Oz -DNDEBUG  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/ed25519-donna/curve25519-donna-32bit.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a"
-				},
-				
-				{
-					"flags" : "  --target=armv7-none-linux-androideabi18 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -DsecLinkJni_EXPORTS  -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -Oz -DNDEBUG  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/ed25519-donna/curve25519-donna-helpers.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a"
-				},
-				
-				{
-					"flags" : "  --target=armv7-none-linux-androideabi18 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -DsecLinkJni_EXPORTS  -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -Oz -DNDEBUG  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/ed25519-donna/curve25519-donna-scalarmult-base.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a"
-				},
-				
-				{
-					"flags" : "  --target=armv7-none-linux-androideabi18 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -DsecLinkJni_EXPORTS  -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -Oz -DNDEBUG  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/ed25519-donna/ed25519-donna-32bit-tables.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a"
-				},
-				
-				{
-					"flags" : "  --target=armv7-none-linux-androideabi18 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -DsecLinkJni_EXPORTS  -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -Oz -DNDEBUG  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/ed25519-donna/ed25519-donna-basepoint-table.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a"
-				},
-				
-				{
-					"flags" : "  --target=armv7-none-linux-androideabi18 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -DsecLinkJni_EXPORTS  -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -Oz -DNDEBUG  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/ed25519-donna/ed25519-donna-impl-base.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a"
-				},
-				
-				{
-					"flags" : "  --target=armv7-none-linux-androideabi18 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -DsecLinkJni_EXPORTS  -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -Oz -DNDEBUG  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/ed25519-donna/ed25519-keccak.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a"
-				},
-				
-				{
-					"flags" : "  --target=armv7-none-linux-androideabi18 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -DsecLinkJni_EXPORTS  -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -Oz -DNDEBUG  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/ed25519-donna/ed25519-sha3.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a"
-				},
-				
-				{
-					"flags" : "  --target=armv7-none-linux-androideabi18 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -DsecLinkJni_EXPORTS  -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -Oz -DNDEBUG  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/ed25519-donna/ed25519.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a"
-				},
-				
-				{
-					"flags" : "  --target=armv7-none-linux-androideabi18 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/apple/Library/Android/sdk/ndk-bundle/sysroot -DsecLinkJni_EXPORTS  -isystem /Users/apple/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -Oz -DNDEBUG  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/ed25519-donna/modm-donna-32bit.c",
 					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/release/armeabi-v7a"
 				}
 			],
-			"output" : "/Users/apple/Desktop/JniLibWallet/app/build/intermediates/cmake/release/obj/armeabi-v7a/libsecLinkJni.so",
+			"output" : "/Users/apple/Desktop/JniLibWallet/app/build/intermediates/cmake/release/obj/armeabi-v7a/libfastmode.so",
 			"toolchain" : "2737792678101485901"
 		}
 	},

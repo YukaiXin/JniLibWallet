@@ -20,12 +20,12 @@ public class FastModeJNI {
         fastModeCallback.sendData(data);
     }
 
-    public void RecieveBuff(byte[] data, int len){
-        fastModeCallback.revice(data, len);
+    public void RecieveBuff(byte[] data, int len, String mac){
+        fastModeCallback.revice(data, len, mac);
     }
 
 
     public native boolean sendData(byte[] data, int length);
-    public native boolean onReceive(byte[] data, int length);
+    public native boolean onReceive(byte[] data, int length, String bleMac);
 //    public native void JniInit();
 }

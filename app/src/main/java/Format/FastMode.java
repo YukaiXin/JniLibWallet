@@ -282,7 +282,7 @@ public class FastMode extends BaseFastmode {
 //                    Log.i(TAG, " mRecvive:      SACK ACK_TYPE_TAIL     "+ Convert.bytesToHexString(bytes));
 
                     if(revBuff != null){
-                        fastModeCallback.revice(revBuff, recvBlockLen);
+//                        fastModeCallback.revice(revBuff, recvBlockLen);
 //                        Log.i("kxyu_r", " mRecvive:      Total Data     "+ Convert.bytesToHexString(revBuff) +" recvBlockLen "+recvBlockLen);
                     }
                     recvBlockLen = 0;

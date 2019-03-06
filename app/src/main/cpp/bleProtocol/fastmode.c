@@ -24,7 +24,7 @@ static bool send_exit_succ = false;
 struct excahngebuf recv_block_buff;  // MAX buffer 2048
 
 
-static bool mRecvive(unsigned char*data, unsigned char len, sendtiny sen, recvCallback cb);
+static bool mRecvive(unsigned char*data, unsigned char len, sendtiny sen, recvCallback cb, char* mac);
 
 //static void doFillAckPack(PackData *tx, unsigned char ack, unsigned char state)
 //{
@@ -238,7 +238,7 @@ bool onSendBlock(unsigned char *senddata, unsigned int sendlen,  sendtiny send)
     
 }
 
-static bool mRecvive(unsigned char*data, unsigned char len, sendtiny sen, recvCallback cb)
+static bool mRecvive(unsigned char*data, unsigned char len, sendtiny sen, recvCallback cb, char* mac)
 {
     PackData  *pack = (PackData  *)data;
     PackData  errpack;
@@ -262,7 +262,7 @@ static bool mRecvive(unsigned char*data, unsigned char len, sendtiny sen, recvCa
         errpack.msglen = 0;
         memset(errpack.data, 0x00, PACK_CONTENT_LENGTH);
         sen((unsigned char*)&errpack, sizeof(PackData));
-        cb(0, pack->data, pack->msglen);
+        cb(0, pack->data, pack->msglen, mac);
         return true;
     }
     
@@ -303,7 +303,7 @@ static bool mRecvive(unsigned char*data, unsigned char len, sendtiny sen, recvCa
                 sen((unsigned char*)&recv_block_map, sizeof(PackData));
                 
             }else if(pack->msgindex == ACK_TAIL){
-                cb(0, rx_buff, recv_block_len);
+                cb(0, rx_buff, recv_block_len , mac);
                 recv_block_len = 0x00;
                 memset(&recv_block_map, 0x00, sizeof(recv_block_map));
                 //send_flag = false;
@@ -351,11 +351,11 @@ static bool mRecvive(unsigned char*data, unsigned char len, sendtiny sen, recvCa
 
 
 
-bool onMRecieve(unsigned char*data, unsigned char len, sendtiny sen, recvCallback cb)
+bool onMRecieve(unsigned char*data, unsigned char len, sendtiny sen, recvCallback cb, char* bleMac)
 {
     if(len == 0){
 //        printf("Length is not 20\r\n");
         return false;
     }
-    return mRecvive(data, len, sen, cb);
+    return mRecvive(data, len, sen, cb, bleMac);
 }

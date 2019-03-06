@@ -57,7 +57,7 @@ typedef enum{
 
 
 typedef bool (*sendtiny)(unsigned char*data, int len);
-typedef bool (*recvCallback)(int pos,unsigned char *data, int len);
+typedef bool (*recvCallback)(int pos,unsigned char *data, int len, char* mac);
 bool isMsgHead(PackData *pack, int *waitlen);
 bool isMsgData(PackData *pack, PackData* map);
 bool isMsgAck(PackData *pack);

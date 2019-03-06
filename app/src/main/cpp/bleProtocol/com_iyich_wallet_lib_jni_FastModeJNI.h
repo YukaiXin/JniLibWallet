@@ -21,8 +21,7 @@ JNIEXPORT jboolean JNICALL Java_com_iyich_wallet_lib_jni_FastModeJNI_sendData
  * Signature: ([BILjava/lang/String;)Z
  */
 JNIEXPORT jboolean JNICALL Java_com_iyich_wallet_lib_jni_FastModeJNI_onReceive
-        (JNIEnv *, jobject, jbyteArray, jint, jstring);
-
+  (JNIEnv *, jobject, jbyteArray, jint, jstring);
 
 #ifdef __cplusplus
 }

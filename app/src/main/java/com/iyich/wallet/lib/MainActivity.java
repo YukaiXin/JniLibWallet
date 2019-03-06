@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.iyich.wallet.lib.jni.FastModeJNI;
 import com.iyich.wallet.lib.jni.SecLinkJni;
 
 import java.util.HashMap;
@@ -73,6 +74,7 @@ public class MainActivity extends AppCompatActivity implements FastModeCallback 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        FastModeJNI fastModeJNI = new FastModeJNI(this);
 
         tvSec =findViewById(R.id.tv_sec);
         tvBle = findViewById(R.id.tv_ble);
@@ -164,7 +166,13 @@ public class MainActivity extends AppCompatActivity implements FastModeCallback 
     }
 
     @Override
-    public void revice(byte[] data, int len) {
-        Log.i("kxyu_ble","   callback  revice  :  "+Convert.bytesToHexString(data));
+    public void revice(byte[] data, int len, String mac) {
+       Log.i("kxyu_ble","   callback  revice  :  "+Convert.bytesToHexString(data));
+
     }
+
+//    @Override
+//    public void revice(byte[] data, int len) {
+//        Log.i("kxyu_ble","   callback  revice  :  "+Convert.bytesToHexString(data));
+//    }
 }

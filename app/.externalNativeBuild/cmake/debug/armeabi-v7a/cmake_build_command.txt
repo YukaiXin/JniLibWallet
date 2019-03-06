@@ -7,11 +7,9 @@ arguments :
 -DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/apple/Desktop/JniLibWallet/app/build/intermediates/cmake/debug/obj/armeabi-v7a
 -DCMAKE_BUILD_TYPE=Debug
 -DANDROID_NDK=/Users/apple/Library/Android/sdk/ndk-bundle
--DCMAKE_C_FLAGS=-std=gnu11 -Os
+-DCMAKE_CXX_FLAGS=-std=c++11
 -DCMAKE_TOOLCHAIN_FILE=/Users/apple/Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake
 -DCMAKE_MAKE_PROGRAM=/Users/apple/Library/Android/sdk/cmake/3.6.4111459/bin/ninja
 -GAndroid Gradle - Ninja
--DANDROID_PLATFORM=android-18
--DANDROID_TOOLCHAIN=clang
 jvmArgs : 
 

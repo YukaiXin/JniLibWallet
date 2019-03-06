@@ -14,6 +14,6 @@
 bool setBlock(unsigned char *block, unsigned int blocklen);
 bool sendBlock(PackData *data, sendtiny send);
 bool onSendBlock(unsigned char *senddata, unsigned int sendlen, sendtiny send);
-bool onMRecieve(unsigned char*data, unsigned char len, sendtiny send, recvCallback cb);
+bool onMRecieve(unsigned char*data, unsigned char len, sendtiny send, recvCallback cb, char* bleMac);
 void sent_callbak_flag(void);
 #endif /* fastmode_h */

@@ -1,3 +1,3 @@
 /Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/edit_cache.dir
 /Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/rebuild_cache.dir
-/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/secLinkJni.dir
+/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/fastmode.dir

@@ -6,222 +6,31 @@
 	[
 		"/Users/apple/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a --target clean"
 	],
+	"cppFileExtensions" : [ "cpp" ],
 	"libraries" : 
 	{
-		"secLinkJni-Debug-arm64-v8a" : 
+		"fastmode-Debug-arm64-v8a" : 
 		{
 			"abi" : "arm64-v8a",
-			"artifactName" : "secLinkJni",
-			"buildCommand" : "/Users/apple/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a --target secLinkJni",
+			"artifactName" : "fastmode",
+			"buildCommand" : "/Users/apple/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a --target fastmode",
 			"buildType" : "debug",
 			"files" : 
 			[
 				
 				{
-					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -DsecLinkJni_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64  -Dfastmode_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -stdlib=libc++ -std=c++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.cpp",
+					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -Dfastmode_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
 					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/bleProtocol/fastmode.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a"
-				},
-				
-				{
-					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -DsecLinkJni_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/seclink.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a"
-				},
-				
-				{
-					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -DsecLinkJni_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/ecdsa.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a"
-				},
-				
-				{
-					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -DsecLinkJni_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/secp256k1.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a"
-				},
-				
-				{
-					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -DsecLinkJni_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/pbkdf2.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a"
-				},
-				
-				{
-					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -DsecLinkJni_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/address.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a"
-				},
-				
-				{
-					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -DsecLinkJni_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/base58.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a"
-				},
-				
-				{
-					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -DsecLinkJni_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/bignum.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a"
-				},
-				
-				{
-					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -DsecLinkJni_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/bip32.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a"
-				},
-				
-				{
-					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -DsecLinkJni_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/blake256.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a"
-				},
-				
-				{
-					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -DsecLinkJni_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/blake2b.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a"
-				},
-				
-				{
-					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -DsecLinkJni_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/curves.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a"
-				},
-				
-				{
-					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -DsecLinkJni_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/hasher.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a"
-				},
-				
-				{
-					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -DsecLinkJni_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/hmac.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a"
-				},
-				
-				{
-					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -DsecLinkJni_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/memzero.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a"
-				},
-				
-				{
-					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -DsecLinkJni_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/nist256p1.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a"
-				},
-				
-				{
-					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -DsecLinkJni_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/rand.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a"
-				},
-				
-				{
-					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -DsecLinkJni_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/ripemd160.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a"
-				},
-				
-				{
-					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -DsecLinkJni_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/sha2.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a"
-				},
-				
-				{
-					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -DsecLinkJni_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/sha3.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a"
-				},
-				
-				{
-					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -DsecLinkJni_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/aes/aes_modes.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a"
-				},
-				
-				{
-					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -DsecLinkJni_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/aes/aescrypt.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a"
-				},
-				
-				{
-					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -DsecLinkJni_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/aes/aeskey.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a"
-				},
-				
-				{
-					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -DsecLinkJni_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/aes/aestab.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a"
-				},
-				
-				{
-					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -DsecLinkJni_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/ed25519-donna/curve25519-donna-32bit.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a"
-				},
-				
-				{
-					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -DsecLinkJni_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/ed25519-donna/curve25519-donna-helpers.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a"
-				},
-				
-				{
-					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -DsecLinkJni_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/ed25519-donna/curve25519-donna-scalarmult-base.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a"
-				},
-				
-				{
-					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -DsecLinkJni_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/ed25519-donna/ed25519-donna-32bit-tables.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a"
-				},
-				
-				{
-					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -DsecLinkJni_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/ed25519-donna/ed25519-donna-basepoint-table.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a"
-				},
-				
-				{
-					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -DsecLinkJni_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/ed25519-donna/ed25519-donna-impl-base.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a"
-				},
-				
-				{
-					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -DsecLinkJni_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/ed25519-donna/ed25519-keccak.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a"
-				},
-				
-				{
-					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -DsecLinkJni_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/ed25519-donna/ed25519-sha3.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a"
-				},
-				
-				{
-					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -DsecLinkJni_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/ed25519-donna/ed25519.c",
-					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a"
-				},
-				
-				{
-					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 -DsecLinkJni_EXPORTS  --sysroot /Users/apple/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu11 -Os -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/Users/apple/Desktop/JniLibWallet/app/src/main/cpp/sec/sing/ed25519-donna/modm-donna-32bit.c",
 					"workingDirectory" : "/Users/apple/Desktop/JniLibWallet/app/.externalNativeBuild/cmake/debug/arm64-v8a"
 				}
 			],
-			"output" : "/Users/apple/Desktop/JniLibWallet/app/build/intermediates/cmake/debug/obj/arm64-v8a/libsecLinkJni.so",
+			"output" : "/Users/apple/Desktop/JniLibWallet/app/build/intermediates/cmake/debug/obj/arm64-v8a/libfastmode.so",
 			"toolchain" : "2737792678101485901"
 		}
 	},
