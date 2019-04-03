@@ -52,8 +52,6 @@ bool receiveBuff(int pos,unsigned char *data, int len, char* mac){
     return false;
 }
 
-
-
 bool sendBuff(unsigned char*data, int len){
 
     JNIEnv* _env;
@@ -87,7 +85,6 @@ bool sendBuff(unsigned char*data, int len){
     return true;
 }
 
-
 /*
  * Class:     com_iyich_wallet_lib_jni_FastModeJNI
  * Method:    sendData
@@ -100,8 +97,6 @@ JNIEXPORT jboolean JNICALL Java_com_iyich_wallet_lib_jni_FastModeJNI_sendData
     unsigned char* buffer = reinterpret_cast<unsigned char *>(env->GetByteArrayElements(data, 0));
     return onSendBlock(buffer, len, sendBuff);
 }
-
-
 
 /*
  * Class:     com_iyich_wallet_lib_jni_FastModeJNI

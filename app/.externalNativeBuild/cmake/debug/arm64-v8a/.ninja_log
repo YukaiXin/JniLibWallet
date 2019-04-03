@@ -18,3 +18,9 @@
 2	58	0	CMakeFiles/fastmode.dir/src/main/cpp/bleProtocol/fastmode.c.o	84b30d15a029769e
 1	452	0	CMakeFiles/fastmode.dir/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.cpp.o	a89dadd1d01b7e07
 453	480	0	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libfastmode.so	9cff5b7336e3e908
+1	63	0	CMakeFiles/fastmode.dir/src/main/cpp/bleProtocol/fastmode.c.o	84b30d15a029769e
+1	441	0	CMakeFiles/fastmode.dir/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.cpp.o	a89dadd1d01b7e07
+441	483	0	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libfastmode.so	9cff5b7336e3e908
+1	62	0	CMakeFiles/fastmode.dir/src/main/cpp/bleProtocol/fastmode.c.o	84b30d15a029769e
+1	435	0	CMakeFiles/fastmode.dir/src/main/cpp/com_iyich_wallet_lib_jni_FastModeJNI.cpp.o	a89dadd1d01b7e07
+435	477	0	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libfastmode.so	9cff5b7336e3e908
